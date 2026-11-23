@@ -4,8 +4,8 @@ Tokens de diseño de Avanz. `source/dtcg/` es la fuente de verdad; el paquete
 publica el CSS que consume el sitio. El sitio no redefine la paleta.
 
 **Estado:** v0.1.0, provisional. Sin manual ni Figma: los colores oficiales
-salen de capturas de la paleta convertidas a sRGB y Open Sans sale del sitio
-actual del banco. Se confirman con el manual o el banco antes de publicar
+salen de capturas de la paleta convertidas a sRGB; la tipografía es Segoe UI,
+con licencia web pendiente. Se confirman con el manual o el banco antes de publicar
 (etapa 4 del proceso del estudio).
 
 ## Uso

@@ -4,6 +4,25 @@ Formato: [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/). Versiones:
 [SemVer](https://semver.org/lang/es/). Un cambio de valor de un token publicado
 es minor; renombrar o quitar un token es major.
 
+## [0.2.0] — 2026-11-23
+
+### Cambiado
+
+- Tipografía: `brand/font-display` y `brand/font-body` pasan de Open Sans a
+  Segoe UI (decisión de Ricardo; licencia web pendiente, etapa 4).
+- `button/font-weight` 600 → 700: Segoe UI no tiene Semibold.
+- `button/danger` pasa a contorno (fondo blanco, texto y borde `danger/700`).
+  El relleno rojo queda en `button/danger-solid`, para confirmaciones.
+- `button/disabled/text` `neutral/400` → `neutral/700`: deshabilitado
+  legible (4,83:1).
+
+### Agregado
+
+- `button/primary/shadow-hover`: el hover no depende solo del color.
+- `button/danger-solid/*`.
+- Pares de contraste del botón destructivo con relleno, su borde y el
+  deshabilitado.
+
 ## [0.1.0] — 2026-11-23
 
 ### Agregado

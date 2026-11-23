@@ -136,11 +136,11 @@
     },
     "font-display": {
       "$type": "string",
-      "$value": "Open Sans"
+      "$value": "Segoe UI"
     },
     "font-body": {
       "$type": "string",
-      "$value": "Open Sans"
+      "$value": "Segoe UI"
     }
   },
   "servicio": {

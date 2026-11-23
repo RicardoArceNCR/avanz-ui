@@ -130,7 +130,7 @@ semanticos = {
     'divider': {'default': c('neutral', 300), 'strong': c('neutral', 500)},
     'brand': {'main': c('brand', 500), 'subtle': c('brand', 50), 'strong': c('brand', 700),
               'action': c('brand', 600), 'action-hover': c('brand', 700), 'action-press': c('brand', 800),
-              'font-display': txt('Open Sans'), 'font-body': txt('Open Sans')},
+              'font-display': txt('Segoe UI'), 'font-body': txt('Segoe UI')},
     'servicio': {'petroleo': servicio('petroleo', 700, W), 'azul': servicio('azul', 800, W),
                  'rojizo': servicio('rojizo', 500, K), 'rojo': servicio('rojo', 600, W)},
     'feedback': {'success': fb('success'), 'warning': fb('warning', 600), 'error': fb('danger'),
@@ -144,13 +144,18 @@ semanticos = {
 # ─── componentes ────────────────────────────────────────────────────────────
 componentes = {
     'button': {
-        'font-weight': num(600),
+        'font-weight': num(700),  # Segoe UI no tiene Semibold
         'radius': ref('radius.md', 'number'),
-        'primary': {'bg': c('brand', 600), 'bg-hover': c('brand', 700), 'bg-press': c('brand', 800), 'text': W, 'border': c('brand', 600)},
+        # Hover: además del color, una sombra (especialistas, 2026-11-23).
+        'primary': {'bg': c('brand', 600), 'bg-hover': c('brand', 700), 'bg-press': c('brand', 800), 'text': W, 'border': c('brand', 600),
+                    'shadow-hover': txt('0px 1px 2px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.10)')},
         'secondary': {'bg': W, 'bg-hover': c('neutral', 50), 'bg-press': c('neutral', 100), 'text': c('neutral', 950), 'border': c('neutral', 500)},
         'ghost': {'bg': W, 'bg-hover': c('neutral', 50), 'bg-press': c('neutral', 100), 'text': c('brand', 700), 'border': W},
-        'danger': {'bg': c('danger', 700), 'bg-hover': c('danger', 800), 'bg-press': c('danger', 900), 'text': W, 'border': c('danger', 700)},
-        'disabled': {'bg': c('neutral', 100), 'text': c('neutral', 400), 'border': c('neutral', 100)},
+        # Destructivo con contorno: relleno rojo solo en la confirmación (danger-solid),
+        # nunca junto al primario. Disabled gris legible (especialistas, 2026-11-23).
+        'danger': {'bg': W, 'bg-hover': c('danger', 50), 'bg-press': c('danger', 100), 'text': c('danger', 700), 'border': c('danger', 700)},
+        'danger-solid': {'bg': c('danger', 700), 'bg-hover': c('danger', 800), 'bg-press': c('danger', 900), 'text': W, 'border': c('danger', 700)},
+        'disabled': {'bg': c('neutral', 100), 'text': c('neutral', 700), 'border': c('neutral', 100)},
         'size': {s: {'height': num(h), 'padding-x': num(p)} for s, h, p in [('sm', 32, 12), ('md', 40, 16), ('lg', 48, 24)]},
     },
     'input': {
@@ -178,8 +183,9 @@ componentes = {
 
 
 # ─── tipografía ─────────────────────────────────────────────────────────────
-# Open Sans (provisional en la recepción). Escala sobria para banca: display
-# sin mayúsculas forzadas; labels en caja normal, sin tracking.
+# Segoe UI (decisión de Ricardo, 2026-11-23; licencia web en la etapa 4). Sin
+# Semibold: botones y etiquetas en Bold. Escala sobria para banca: display sin
+# mayúsculas forzadas; labels en caja normal, sin tracking.
 def estilo(size, lh, ls=None):
     d = {'size': num(size), 'line-height': num(lh)}
     if ls is not None:

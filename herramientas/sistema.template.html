@@ -1,15 +1,12 @@
 <title>Sistema Avanz</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap">
 <style>
 /* Layout: columna editorial alineada a la izquierda.
    Todos los colores salen de build/tokens.css (incrustado abajo). Avanz v0.1.0
    publica solo tema claro. */
 :root {
 /*TOKENS_LIGHT*/
-  --f-display: var(--brand-font-display), "Open Sans", system-ui, sans-serif;
-  --f-body: var(--brand-font-body), "Open Sans", system-ui, sans-serif;
+  --f-display: var(--brand-font-display), "Segoe UI", -apple-system, Roboto, system-ui, sans-serif;
+  --f-body: var(--brand-font-body), "Segoe UI", -apple-system, Roboto, system-ui, sans-serif;
   --f-mono: ui-monospace, Menlo, monospace;
   --measure: 42rem;
 }
@@ -124,13 +121,15 @@ h3 { font: 700 var(--typography-styles-label-md-size)/1.3 var(--f-body); color: 
 .row { display: flex; flex-wrap: wrap; gap: var(--spacing-3); align-items: center; }
 .btn { font: var(--button-font-weight) var(--typography-styles-label-md-size)/1 var(--f-body); height: var(--button-size-md-height); padding-inline: var(--button-size-md-padding-x); border-radius: var(--button-radius); border: 1.5px solid transparent; cursor: pointer; }
 .btn.primary { background: var(--button-primary-bg); color: var(--button-primary-text); border-color: var(--button-primary-border); }
-.btn.primary:hover { background: var(--button-primary-bg-hover); }
+.btn.primary:hover { background: var(--button-primary-bg-hover); box-shadow: var(--button-primary-shadow-hover); }
 .btn.primary:active { background: var(--button-primary-bg-press); }
 .btn.secondary { background: var(--button-secondary-bg); color: var(--button-secondary-text); border-color: var(--button-secondary-border); }
 .btn.secondary:hover { background: var(--button-secondary-bg-hover); }
 .btn.ghost { background: var(--button-ghost-bg); color: var(--button-ghost-text); border-color: var(--button-ghost-border); }
 .btn.ghost:hover { background: var(--button-ghost-bg-hover); }
 .btn.danger { background: var(--button-danger-bg); color: var(--button-danger-text); border-color: var(--button-danger-border); }
+.btn.danger:hover { background: var(--button-danger-bg-hover); }
+.btn.danger-solid { background: var(--button-danger-solid-bg); color: var(--button-danger-solid-text); border-color: var(--button-danger-solid-border); }
 .btn:disabled { background: var(--button-disabled-bg); color: var(--button-disabled-text); border-color: var(--button-disabled-border); cursor: not-allowed; }
 .btn.focus { outline: 2px solid var(--focus-ring-color); outline-offset: 2px; }
 .btn:focus-visible { outline: 2px solid var(--focus-ring-color); outline-offset: 2px; }
@@ -248,7 +247,7 @@ footer.end { padding-top: var(--spacing-10); border-top: 1px solid var(--divider
 </section>
 
 <section id="tipo">
-  <div class="sh"><h2>Tipografía</h2><p>Open Sans en toda la interfaz (<code>brand/font-*</code>), provisional hasta que el banco confirme su tipografía de marca. Tamaño, interlineado y tracking salen de <code>typography/styles/*</code>.</p></div>
+  <div class="sh"><h2>Tipografía</h2><p>Segoe UI en toda la interfaz (<code>brand/font-*</code>), con licencia web pendiente: esta página la muestra si está instalada (Windows) y si no, la de respaldo. Tamaño, interlineado y tracking salen de <code>typography/styles/*</code>.</p></div>
   <ol class="types"><!--TYPE--></ol>
 </section>
 
@@ -276,6 +275,7 @@ footer.end { padding-top: var(--spacing-10); border-top: 1px solid var(--divider
     <button class="btn secondary" type="button">Ver colores</button>
     <button class="btn ghost" type="button">Copiar hex</button>
     <button class="btn danger" type="button">Eliminar</button>
+    <button class="btn danger-solid" type="button">Confirmar eliminación</button>
     <button class="btn primary" type="button" disabled>No disponible</button>
     <button class="btn primary focus" type="button">Con foco</button>
   </div>

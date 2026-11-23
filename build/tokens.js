@@ -4249,12 +4249,12 @@ export default {
     },
     "font-display": {
       $type: "string",
-      $value: "Open Sans",
+      $value: "Segoe UI",
       filePath: "source/semanticos.json",
       isSource: true,
       original: {
         $type: "string",
-        $value: "Open Sans",
+        $value: "Segoe UI",
       },
       name: "BrandFontDisplay",
       attributes: {
@@ -4265,12 +4265,12 @@ export default {
     },
     "font-body": {
       $type: "string",
-      $value: "Open Sans",
+      $value: "Segoe UI",
       filePath: "source/semanticos.json",
       isSource: true,
       original: {
         $type: "string",
-        $value: "Open Sans",
+        $value: "Segoe UI",
       },
       name: "BrandFontBody",
       attributes: {
@@ -4936,12 +4936,12 @@ export default {
   button: {
     "font-weight": {
       $type: "float",
-      $value: 600,
+      $value: 700,
       filePath: "source/componentes.json",
       isSource: true,
       original: {
         $type: "float",
-        $value: 600,
+        $value: 700,
       },
       name: "ButtonFontWeight",
       attributes: {
@@ -5051,6 +5051,25 @@ export default {
           item: "border",
         },
         path: ["button", "primary", "border"],
+      },
+      "shadow-hover": {
+        $type: "string",
+        $value:
+          "0px 1px 2px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.10)",
+        filePath: "source/componentes.json",
+        isSource: true,
+        original: {
+          $type: "string",
+          $value:
+            "0px 1px 2px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.10)",
+        },
+        name: "ButtonPrimaryShadowHover",
+        attributes: {
+          category: "button",
+          type: "primary",
+          item: "shadow-hover",
+        },
+        path: ["button", "primary", "shadow-hover"],
       },
     },
     secondary: {
@@ -5230,12 +5249,12 @@ export default {
     danger: {
       bg: {
         $type: "color",
-        $value: "#bc001c",
+        $value: "#ffffff",
         filePath: "source/componentes.json",
         isSource: true,
         original: {
           $type: "color",
-          $value: "{color.danger.700}",
+          $value: "{color.white}",
         },
         name: "ButtonDangerBg",
         attributes: {
@@ -5247,12 +5266,12 @@ export default {
       },
       "bg-hover": {
         $type: "color",
-        $value: "#960e19",
+        $value: "#fff4f3",
         filePath: "source/componentes.json",
         isSource: true,
         original: {
           $type: "color",
-          $value: "{color.danger.800}",
+          $value: "{color.danger.50}",
         },
         name: "ButtonDangerBgHover",
         attributes: {
@@ -5264,12 +5283,12 @@ export default {
       },
       "bg-press": {
         $type: "color",
-        $value: "#721115",
+        $value: "#ffe2de",
         filePath: "source/componentes.json",
         isSource: true,
         original: {
           $type: "color",
-          $value: "{color.danger.900}",
+          $value: "{color.danger.100}",
         },
         name: "ButtonDangerBgPress",
         attributes: {
@@ -5281,12 +5300,12 @@ export default {
       },
       text: {
         $type: "color",
-        $value: "#ffffff",
+        $value: "#bc001c",
         filePath: "source/componentes.json",
         isSource: true,
         original: {
           $type: "color",
-          $value: "{color.white}",
+          $value: "{color.danger.700}",
         },
         name: "ButtonDangerText",
         attributes: {
@@ -5314,6 +5333,93 @@ export default {
         path: ["button", "danger", "border"],
       },
     },
+    "danger-solid": {
+      bg: {
+        $type: "color",
+        $value: "#bc001c",
+        filePath: "source/componentes.json",
+        isSource: true,
+        original: {
+          $type: "color",
+          $value: "{color.danger.700}",
+        },
+        name: "ButtonDangerSolidBg",
+        attributes: {
+          category: "button",
+          type: "danger-solid",
+          item: "bg",
+        },
+        path: ["button", "danger-solid", "bg"],
+      },
+      "bg-hover": {
+        $type: "color",
+        $value: "#960e19",
+        filePath: "source/componentes.json",
+        isSource: true,
+        original: {
+          $type: "color",
+          $value: "{color.danger.800}",
+        },
+        name: "ButtonDangerSolidBgHover",
+        attributes: {
+          category: "button",
+          type: "danger-solid",
+          item: "bg-hover",
+        },
+        path: ["button", "danger-solid", "bg-hover"],
+      },
+      "bg-press": {
+        $type: "color",
+        $value: "#721115",
+        filePath: "source/componentes.json",
+        isSource: true,
+        original: {
+          $type: "color",
+          $value: "{color.danger.900}",
+        },
+        name: "ButtonDangerSolidBgPress",
+        attributes: {
+          category: "button",
+          type: "danger-solid",
+          item: "bg-press",
+        },
+        path: ["button", "danger-solid", "bg-press"],
+      },
+      text: {
+        $type: "color",
+        $value: "#ffffff",
+        filePath: "source/componentes.json",
+        isSource: true,
+        original: {
+          $type: "color",
+          $value: "{color.white}",
+        },
+        name: "ButtonDangerSolidText",
+        attributes: {
+          category: "button",
+          type: "danger-solid",
+          item: "text",
+        },
+        path: ["button", "danger-solid", "text"],
+      },
+      border: {
+        $type: "color",
+        $value: "#bc001c",
+        filePath: "source/componentes.json",
+        isSource: true,
+        original: {
+          $type: "color",
+          $value: "{color.danger.700}",
+        },
+        name: "ButtonDangerSolidBorder",
+        attributes: {
+          category: "button",
+          type: "danger-solid",
+          item: "border",
+        },
+        path: ["button", "danger-solid", "border"],
+      },
+    },
     disabled: {
       bg: {
         $type: "color",
@@ -5334,12 +5440,12 @@ export default {
       },
       text: {
         $type: "color",
-        $value: "#a6a9a7",
+        $value: "#646569",
         filePath: "source/componentes.json",
         isSource: true,
         original: {
           $type: "color",
-          $value: "{color.neutral.400}",
+          $value: "{color.neutral.700}",
         },
         name: "ButtonDisabledText",
         attributes: {

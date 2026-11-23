@@ -83,17 +83,21 @@
   ],
   "tipografia": [
     {
-      "familia": "Open Sans",
+      "familia": "Segoe UI",
       "pesos": [
         400,
-        600,
         700
       ],
-      "uso": "Toda la interfaz (texto y títulos)",
-      "fuente": "CSS de avanzbanc.com (Google Fonts)",
-      "licencia": "SIL OFL 1.1, uso web libre",
+      "estilos": [
+        "Regular",
+        "Italic",
+        "Bold"
+      ],
+      "uso": "Toda la interfaz: títulos, lectura, botones y etiquetas (Bold; no hay Semibold)",
+      "fuente": "Archivos entregados por Ricardo (2026-11-23), recepcion.json → tipografia",
+      "licencia": "Microsoft, comercial: licencia web pendiente (MyFonts/Monotype o Adobe Fonts), se exige en la etapa 4",
       "provisional": true,
-      "nota": "Falta que el banco confirme que es la tipografía de marca."
+      "nota": "Reemplaza a Open Sans (decisión de Ricardo). Falta confirmar si es la tipografía de marca del banco; los archivos actuales son un subconjunto latino que se reemplaza por el kit licenciado."
     }
   ],
   "conflictos": [

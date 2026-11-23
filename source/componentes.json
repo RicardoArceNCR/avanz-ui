@@ -2,7 +2,7 @@
   "button": {
     "font-weight": {
       "$type": "float",
-      "$value": 600
+      "$value": 700
     },
     "radius": {
       "$type": "dimension",
@@ -28,6 +28,10 @@
       "border": {
         "$type": "color",
         "$value": "{color.brand.600}"
+      },
+      "shadow-hover": {
+        "$type": "string",
+        "$value": "0px 1px 2px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.10)"
       }
     },
     "secondary": {
@@ -77,6 +81,28 @@
     "danger": {
       "bg": {
         "$type": "color",
+        "$value": "{color.white}"
+      },
+      "bg-hover": {
+        "$type": "color",
+        "$value": "{color.danger.50}"
+      },
+      "bg-press": {
+        "$type": "color",
+        "$value": "{color.danger.100}"
+      },
+      "text": {
+        "$type": "color",
+        "$value": "{color.danger.700}"
+      },
+      "border": {
+        "$type": "color",
+        "$value": "{color.danger.700}"
+      }
+    },
+    "danger-solid": {
+      "bg": {
+        "$type": "color",
         "$value": "{color.danger.700}"
       },
       "bg-hover": {
@@ -103,7 +129,7 @@
       },
       "text": {
         "$type": "color",
-        "$value": "{color.neutral.400}"
+        "$value": "{color.neutral.700}"
       },
       "border": {
         "$type": "color",

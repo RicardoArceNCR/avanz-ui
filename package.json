@@ -1,6 +1,6 @@
 {
   "name": "@avanz/ui",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Tokens de Avanz. source/dtcg es la fuente de verdad; este paquete publica el CSS. El sitio no redefine la paleta.",
   "license": "UNLICENSED",
   "private": true,

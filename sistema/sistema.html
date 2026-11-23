@@ -1,7 +1,4 @@
 <title>Sistema Avanz</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap">
 <style>
 /* Layout: columna editorial alineada a la izquierda.
    Todos los colores salen de build/tokens.css (incrustado abajo). Avanz v0.1.0
@@ -215,9 +212,10 @@
   --border-width-md: 1.5px;
   --border-width-lg: 2px;
   --border-width-xl: 3px;
-  --brand-font-display: Open Sans;
-  --brand-font-body: Open Sans;
-  --button-font-weight: 600;
+  --brand-font-display: Segoe UI;
+  --brand-font-body: Segoe UI;
+  --button-font-weight: 700;
+  --button-primary-shadow-hover: 0px 1px 2px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.10);
   --button-size-sm-height: 32px;
   --button-size-sm-padding-x: 12px;
   --button-size-md-height: 40px;
@@ -360,13 +358,18 @@
   --button-ghost-bg-press: var(--color-neutral-100);
   --button-ghost-text: var(--color-brand-700);
   --button-ghost-border: var(--color-white);
-  --button-danger-bg: var(--color-danger-700);
-  --button-danger-bg-hover: var(--color-danger-800);
-  --button-danger-bg-press: var(--color-danger-900);
-  --button-danger-text: var(--color-white);
+  --button-danger-bg: var(--color-white);
+  --button-danger-bg-hover: var(--color-danger-50);
+  --button-danger-bg-press: var(--color-danger-100);
+  --button-danger-text: var(--color-danger-700);
   --button-danger-border: var(--color-danger-700);
+  --button-danger-solid-bg: var(--color-danger-700);
+  --button-danger-solid-bg-hover: var(--color-danger-800);
+  --button-danger-solid-bg-press: var(--color-danger-900);
+  --button-danger-solid-text: var(--color-white);
+  --button-danger-solid-border: var(--color-danger-700);
   --button-disabled-bg: var(--color-neutral-100);
-  --button-disabled-text: var(--color-neutral-400);
+  --button-disabled-text: var(--color-neutral-700);
   --button-disabled-border: var(--color-neutral-100);
   --input-bg: var(--color-white);
   --input-bg-focus: var(--color-white);
@@ -399,8 +402,8 @@
   --pill-warning-text: var(--color-warning-800);
   --pill-error-bg: var(--color-danger-50);
   --pill-error-text: var(--color-danger-800);
-  --f-display: var(--brand-font-display), "Open Sans", system-ui, sans-serif;
-  --f-body: var(--brand-font-body), "Open Sans", system-ui, sans-serif;
+  --f-display: var(--brand-font-display), "Segoe UI", -apple-system, Roboto, system-ui, sans-serif;
+  --f-body: var(--brand-font-body), "Segoe UI", -apple-system, Roboto, system-ui, sans-serif;
   --f-mono: ui-monospace, Menlo, monospace;
   --measure: 42rem;
 }
@@ -515,13 +518,15 @@ h3 { font: 700 var(--typography-styles-label-md-size)/1.3 var(--f-body); color: 
 .row { display: flex; flex-wrap: wrap; gap: var(--spacing-3); align-items: center; }
 .btn { font: var(--button-font-weight) var(--typography-styles-label-md-size)/1 var(--f-body); height: var(--button-size-md-height); padding-inline: var(--button-size-md-padding-x); border-radius: var(--button-radius); border: 1.5px solid transparent; cursor: pointer; }
 .btn.primary { background: var(--button-primary-bg); color: var(--button-primary-text); border-color: var(--button-primary-border); }
-.btn.primary:hover { background: var(--button-primary-bg-hover); }
+.btn.primary:hover { background: var(--button-primary-bg-hover); box-shadow: var(--button-primary-shadow-hover); }
 .btn.primary:active { background: var(--button-primary-bg-press); }
 .btn.secondary { background: var(--button-secondary-bg); color: var(--button-secondary-text); border-color: var(--button-secondary-border); }
 .btn.secondary:hover { background: var(--button-secondary-bg-hover); }
 .btn.ghost { background: var(--button-ghost-bg); color: var(--button-ghost-text); border-color: var(--button-ghost-border); }
 .btn.ghost:hover { background: var(--button-ghost-bg-hover); }
 .btn.danger { background: var(--button-danger-bg); color: var(--button-danger-text); border-color: var(--button-danger-border); }
+.btn.danger:hover { background: var(--button-danger-bg-hover); }
+.btn.danger-solid { background: var(--button-danger-solid-bg); color: var(--button-danger-solid-text); border-color: var(--button-danger-solid-border); }
 .btn:disabled { background: var(--button-disabled-bg); color: var(--button-disabled-text); border-color: var(--button-disabled-border); cursor: not-allowed; }
 .btn.focus { outline: 2px solid var(--focus-ring-color); outline-offset: 2px; }
 .btn:focus-visible { outline: 2px solid var(--focus-ring-color); outline-offset: 2px; }
@@ -586,10 +591,10 @@ footer.end { padding-top: var(--spacing-10); border-top: 1px solid var(--divider
 
 <main>
 <div class="open">
-  <p class="over">Sistema · @avanz/ui v0.1.0</p>
+  <p class="over">Sistema · @avanz/ui v0.2.0</p>
   <h1>Avanz</h1>
   <p class="lede">Los tokens de Avanz tal como los publica el paquete. Todo lo que ves en esta página sale de <code>source/dtcg</code>, compilado a <code>tokens.css</code>. Los colores son provisionales: salen de capturas de la paleta y se confirman con el manual o el banco antes de publicar.</p>
-  <div class="facts"><span><b>9</b> rampas de color</span><span><b>392</b> tokens en :root</span><span><b>1</b> tema (claro)</span><span>Fuente: <code>@avanz/ui</code></span></div>
+  <div class="facts"><span><b>9</b> rampas de color</span><span><b>398</b> tokens en :root</span><span><b>1</b> tema (claro)</span><span>Fuente: <code>@avanz/ui</code></span></div>
 </div>
 
 <section id="marca">
@@ -647,7 +652,7 @@ footer.end { padding-top: var(--spacing-10); border-top: 1px solid var(--divider
 </section>
 
 <section id="tipo">
-  <div class="sh"><h2>Tipografía</h2><p>Open Sans en toda la interfaz (<code>brand/font-*</code>), provisional hasta que el banco confirme su tipografía de marca. Tamaño, interlineado y tracking salen de <code>typography/styles/*</code>.</p></div>
+  <div class="sh"><h2>Tipografía</h2><p>Segoe UI en toda la interfaz (<code>brand/font-*</code>), con licencia web pendiente: esta página la muestra si está instalada (Windows) y si no, la de respaldo. Tamaño, interlineado y tracking salen de <code>typography/styles/*</code>.</p></div>
   <ol class="types"><li class="trow"><div class="tmeta"><code>display-hero</code><span>56 / 64 · -1.12 · display</span></div><p class="t-display t-display" style="font-size:var(--typography-styles-display-hero-size);line-height:var(--typography-styles-display-hero-line-height);letter-spacing:var(--typography-styles-display-hero-letter-spacing);">Avanz</p></li>
 <li class="trow"><div class="tmeta"><code>display-xl</code><span>48 / 56 · -0.96 · display</span></div><p class="t-display t-display" style="font-size:var(--typography-styles-display-xl-size);line-height:var(--typography-styles-display-xl-line-height);letter-spacing:var(--typography-styles-display-xl-letter-spacing);">Sistema de marca</p></li>
 <li class="trow"><div class="tmeta"><code>display-lg</code><span>40 / 48 · -0.6 · display</span></div><p class="t-display t-display" style="font-size:var(--typography-styles-display-lg-size);line-height:var(--typography-styles-display-lg-line-height);letter-spacing:var(--typography-styles-display-lg-letter-spacing);">Color, tipografía y logo</p></li>
@@ -691,6 +696,7 @@ footer.end { padding-top: var(--spacing-10); border-top: 1px solid var(--divider
     <button class="btn secondary" type="button">Ver colores</button>
     <button class="btn ghost" type="button">Copiar hex</button>
     <button class="btn danger" type="button">Eliminar</button>
+    <button class="btn danger-solid" type="button">Confirmar eliminación</button>
     <button class="btn primary" type="button" disabled>No disponible</button>
     <button class="btn primary focus" type="button">Con foco</button>
   </div>
@@ -732,7 +738,7 @@ footer.end { padding-top: var(--spacing-10); border-top: 1px solid var(--divider
 </section>
 
 <section id="contraste">
-  <div class="sh"><h2>Contraste</h2><p>Los pares de <code>scripts/contrast-pairs.json</code>, medidos con WCAG 2; APCA Lc va como referencia. 59 pares medidos en el tema claro: 0 fallan y están en ALLOW, 0 fallan sin excepción. El mismo archivo bloquea el build en <code>check-contrast.mjs</code>.</p></div>
+  <div class="sh"><h2>Contraste</h2><p>Los pares de <code>scripts/contrast-pairs.json</code>, medidos con WCAG 2; APCA Lc va como referencia. 64 pares medidos en el tema claro: 0 fallan y están en ALLOW, 0 fallan sin excepción. El mismo archivo bloquea el build en <code>check-contrast.mjs</code>.</p></div>
   <div class="tablewrap"><table>
     <thead><tr><th>Tema</th><th>Muestra</th><th>Primer plano</th><th>Fondo</th><th>WCAG</th><th>Lc</th><th>Uso</th><th>Estado</th></tr></thead>
     <tbody><tr><td>Claro</td><td><span class="pair sm" style="--bg:#FFFFFF;--fg:#28292A">Aa</span></td><td><code>--text-primary</code></td><td><code>--background-page</code></td><td class="num">14.57</td><td class="num">101</td><td>texto</td><td><span class="state ok">pasa 4.5</span></td></tr>
@@ -758,9 +764,14 @@ footer.end { padding-top: var(--spacing-10); border-top: 1px solid var(--divider
 <tr><td>Claro</td><td><span class="pair sm" style="--bg:#EAEAE8;--fg:#28292A">Aa</span></td><td><code>--button-secondary-text</code></td><td><code>--button-secondary-bg-press</code></td><td class="num">12.10</td><td class="num">89</td><td>texto en botón</td><td><span class="state ok">pasa 4.5</span></td></tr>
 <tr><td>Claro</td><td><span class="pair sm" style="--bg:#FFFFFF;--fg:#A74A00">Aa</span></td><td><code>--button-ghost-text</code></td><td><code>--button-ghost-bg</code></td><td class="num">5.80</td><td class="num">78</td><td>texto en botón</td><td><span class="state ok">pasa 4.5</span></td></tr>
 <tr><td>Claro</td><td><span class="pair sm" style="--bg:#EAEAE8;--fg:#A74A00">Aa</span></td><td><code>--button-ghost-text</code></td><td><code>--button-ghost-bg-press</code></td><td class="num">4.81</td><td class="num">66</td><td>texto en botón</td><td><span class="state ok">pasa 4.5</span></td></tr>
-<tr><td>Claro</td><td><span class="pair sm" style="--bg:#BC001C;--fg:#FFFFFF">Aa</span></td><td><code>--button-danger-text</code></td><td><code>--button-danger-bg</code></td><td class="num">6.66</td><td class="num">85</td><td>texto en botón</td><td><span class="state ok">pasa 4.5</span></td></tr>
-<tr><td>Claro</td><td><span class="pair sm" style="--bg:#960E19;--fg:#FFFFFF">Aa</span></td><td><code>--button-danger-text</code></td><td><code>--button-danger-bg-hover</code></td><td class="num">8.85</td><td class="num">93</td><td>texto en botón</td><td><span class="state ok">pasa 4.5</span></td></tr>
-<tr><td>Claro</td><td><span class="pair sm" style="--bg:#721115;--fg:#FFFFFF">Aa</span></td><td><code>--button-danger-text</code></td><td><code>--button-danger-bg-press</code></td><td class="num">11.62</td><td class="num">99</td><td>texto en botón</td><td><span class="state ok">pasa 4.5</span></td></tr>
+<tr><td>Claro</td><td><span class="pair sm" style="--bg:#FFFFFF;--fg:#BC001C">Aa</span></td><td><code>--button-danger-text</code></td><td><code>--button-danger-bg</code></td><td class="num">6.66</td><td class="num">80</td><td>texto en botón</td><td><span class="state ok">pasa 4.5</span></td></tr>
+<tr><td>Claro</td><td><span class="pair sm" style="--bg:#FFF4F3;--fg:#BC001C">Aa</span></td><td><code>--button-danger-text</code></td><td><code>--button-danger-bg-hover</code></td><td class="num">6.18</td><td class="num">75</td><td>texto en botón</td><td><span class="state ok">pasa 4.5</span></td></tr>
+<tr><td>Claro</td><td><span class="pair sm" style="--bg:#FFE2DE;--fg:#BC001C">Aa</span></td><td><code>--button-danger-text</code></td><td><code>--button-danger-bg-press</code></td><td class="num">5.45</td><td class="num">67</td><td>texto en botón</td><td><span class="state ok">pasa 4.5</span></td></tr>
+<tr><td>Claro</td><td><span class="pair sm" style="--bg:#BC001C;--fg:#FFFFFF">Aa</span></td><td><code>--button-danger-solid-text</code></td><td><code>--button-danger-solid-bg</code></td><td class="num">6.66</td><td class="num">85</td><td>texto en botón</td><td><span class="state ok">pasa 4.5</span></td></tr>
+<tr><td>Claro</td><td><span class="pair sm" style="--bg:#960E19;--fg:#FFFFFF">Aa</span></td><td><code>--button-danger-solid-text</code></td><td><code>--button-danger-solid-bg-hover</code></td><td class="num">8.85</td><td class="num">93</td><td>texto en botón</td><td><span class="state ok">pasa 4.5</span></td></tr>
+<tr><td>Claro</td><td><span class="pair sm" style="--bg:#721115;--fg:#FFFFFF">Aa</span></td><td><code>--button-danger-solid-text</code></td><td><code>--button-danger-solid-bg-press</code></td><td class="num">11.62</td><td class="num">99</td><td>texto en botón</td><td><span class="state ok">pasa 4.5</span></td></tr>
+<tr><td>Claro</td><td><span class="pair sm" style="--bg:#FFFFFF;--fg:#BC001C">Aa</span></td><td><code>--button-danger-border</code></td><td><code>--background-page</code></td><td class="num">6.66</td><td class="num">80</td><td>borde de control</td><td><span class="state ok">pasa 3</span></td></tr>
+<tr><td>Claro</td><td><span class="pair sm" style="--bg:#EAEAE8;--fg:#646569">Aa</span></td><td><code>--button-disabled-text</code></td><td><code>--button-disabled-bg</code></td><td class="num">4.83</td><td class="num">67</td><td>deshabilitado legible (decisión, WCAG lo exime)</td><td><span class="state ok">pasa 4.5</span></td></tr>
 <tr><td>Claro</td><td><span class="pair sm" style="--bg:#FFFFFF;--fg:#878C8E">Aa</span></td><td><code>--button-secondary-border</code></td><td><code>--background-page</code></td><td class="num">3.40</td><td class="num">62</td><td>borde de control</td><td><span class="state ok">pasa 3</span></td></tr>
 <tr><td>Claro</td><td><span class="pair sm" style="--bg:#FFFFFF;--fg:#28292A">Aa</span></td><td><code>--input-text</code></td><td><code>--input-bg</code></td><td class="num">14.57</td><td class="num">101</td><td>texto</td><td><span class="state ok">pasa 4.5</span></td></tr>
 <tr><td>Claro</td><td><span class="pair sm" style="--bg:#FFFFFF;--fg:#646569">Aa</span></td><td><code>--input-placeholder</code></td><td><code>--input-bg</code></td><td class="num">5.82</td><td class="num">79</td><td>texto</td><td><span class="state ok">pasa 4.5</span></td></tr>

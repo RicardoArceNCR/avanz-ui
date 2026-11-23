@@ -34,7 +34,7 @@
      consumidor (`--typography-family-*`), NO al token `--brand-font-*`: el
      token de Figma guarda el NOMBRE de la familia (documentación y paridad con
      el diseño), mientras que la variable de `next/font` trae el stack completo
-     con el fallback de métricas ajustadas ("Open Sans","Open Sans Fallback").
+     con el fallback de métricas ajustadas ("Segoe UI","Segoe UI Fallback").
      El contrato es el nombre: si un consumidor carga la fuente con otro nombre
      de variable, su `font-*` no resuelve. */
   --font-sans: var(--typography-family-body);

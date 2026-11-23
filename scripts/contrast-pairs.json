@@ -158,6 +158,36 @@
       "texto en botón"
     ],
     [
+      "button-danger-solid-text",
+      "button-danger-solid-bg",
+      4.5,
+      "texto en botón"
+    ],
+    [
+      "button-danger-solid-text",
+      "button-danger-solid-bg-hover",
+      4.5,
+      "texto en botón"
+    ],
+    [
+      "button-danger-solid-text",
+      "button-danger-solid-bg-press",
+      4.5,
+      "texto en botón"
+    ],
+    [
+      "button-danger-border",
+      "background-page",
+      3,
+      "borde de control"
+    ],
+    [
+      "button-disabled-text",
+      "button-disabled-bg",
+      4.5,
+      "deshabilitado legible (decisión, WCAG lo exime)"
+    ],
+    [
       "button-secondary-border",
       "background-page",
       3,
