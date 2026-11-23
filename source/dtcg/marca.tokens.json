@@ -1,0 +1,132 @@
+{
+  "color": {
+    "marca": {
+      "naranja": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            1.0,
+            0.458824,
+            0.0
+          ],
+          "alpha": 1,
+          "hex": "#FF7500"
+        },
+        "$description": "Captura de la paleta en sRGB (provisional), Principales."
+      },
+      "gris-oscuro": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.392157,
+            0.396078,
+            0.411765
+          ],
+          "alpha": 1,
+          "hex": "#646569"
+        },
+        "$description": "Captura de la paleta en sRGB (provisional), Principales."
+      },
+      "gris-medio": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.529412,
+            0.54902,
+            0.556863
+          ],
+          "alpha": 1,
+          "hex": "#878C8E"
+        },
+        "$description": "Captura de la paleta en sRGB (provisional), Principales."
+      },
+      "gris-claro": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.776471,
+            0.776471,
+            0.776471
+          ],
+          "alpha": 1,
+          "hex": "#C6C6C6"
+        },
+        "$description": "Captura de la paleta en sRGB (provisional), Principales."
+      },
+      "servicio-petroleo": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.152941,
+            0.447059,
+            0.482353
+          ],
+          "alpha": 1,
+          "hex": "#27727B"
+        },
+        "$description": "Captura de la paleta en sRGB (provisional), Secundarios."
+      },
+      "servicio-azul": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.0,
+            0.368627,
+            0.533333
+          ],
+          "alpha": 1,
+          "hex": "#005E88"
+        },
+        "$description": "Captura de la paleta en sRGB (provisional), Secundarios."
+      },
+      "servicio-azul-retirado": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.160784,
+            0.364706,
+            0.494118
+          ],
+          "alpha": 1,
+          "hex": "#295D7E"
+        },
+        "$description": "Captura de la paleta en sRGB (provisional), Secundarios."
+      },
+      "servicio-naranja-rojizo": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.980392,
+            0.27451,
+            0.086275
+          ],
+          "alpha": 1,
+          "hex": "#FA4616"
+        },
+        "$description": "Captura de la paleta en sRGB (provisional), Secundarios."
+      },
+      "servicio-rojo": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.929412,
+            0.0,
+            0.14902
+          ],
+          "alpha": 1,
+          "hex": "#ED0026"
+        },
+        "$description": "Captura de la paleta en sRGB (provisional), Secundarios."
+      }
+    }
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "$comentario": "Fuente de verdad del color (etapa 1, runbooks/cliente.md). Sin manual ni Figma: sale de la captura de Ricardo convertida a sRGB, provisional hasta el manual o la confirmación escrita del banco (etapa 4). Decisiones de Ricardo del 2026-11-23, en docs/arranque.md del sitio.",
+  "fuente": "capturas",
+  "captura": {
+    "archivo": "vpermedia/avanz/docs/avanz/paleta-srgb.png",
+    "sha256": "3713bb77badf8fc2a7165dd8d5c09f50646f8d95596943a72adc4a81486651f1",
+    "verificacion": "Rótulos y muestras coinciden en sRGB; las muestras de los secundarios difieren en 1/255 por redondeo de la conversión (manda el rótulo)."
+  },
+  "export": "source/dtcg/marca.tokens.json",
+  "colores": [
+    {
+      "nombre": "naranja",
+      "token": "color.marca.naranja",
+      "valor": "#FF7500",
+      "fuente": "captura de la paleta, Principales: rótulo y muestra coinciden en sRGB",
+      "figma": null,
+      "decision": "Marca. Superficies, ilustración y marca con texto negro (7,80). Nunca texto blanco (2,69). El rol de acción usa #B85200 de su rampa (etapa 2)."
+    },
+    {
+      "nombre": "gris-oscuro",
+      "token": "color.marca.gris-oscuro",
+      "valor": "#646569",
+      "fuente": "captura de la paleta, Principales: rótulo y muestra coinciden en sRGB",
+      "figma": null,
+      "decision": "Texto secundario (blanco 5,82). El texto principal es un gris casi negro de su rampa (etapa 2)."
+    },
+    {
+      "nombre": "gris-medio",
+      "token": "color.marca.gris-medio",
+      "valor": "#878C8E",
+      "fuente": "captura de la paleta, Principales: rótulo y muestra coinciden en sRGB",
+      "figma": null,
+      "decision": "Borde de campos y controles (3,40 sobre blanco). Texto blanco solo grande."
+    },
+    {
+      "nombre": "gris-claro",
+      "token": "color.marca.gris-claro",
+      "valor": "#C6C6C6",
+      "fuente": "captura de la paleta, Principales: rótulo y muestra coinciden en sRGB",
+      "figma": null,
+      "decision": "Solo divisores decorativos y fondos con texto negro. No sirve de borde de control (1,71)."
+    },
+    {
+      "nombre": "servicio-petroleo",
+      "token": "color.marca.servicio-petroleo",
+      "valor": "#27727B",
+      "fuente": "captura de la paleta, Secundarios: rótulo y muestra coinciden en sRGB",
+      "figma": null,
+      "decision": "Servicio. Texto blanco (5,56)."
+    },
+    {
+      "nombre": "servicio-azul",
+      "token": "color.marca.servicio-azul",
+      "valor": "#005E88",
+      "fuente": "captura de la paleta, Secundarios: rótulo y muestra coinciden en sRGB",
+      "figma": null,
+      "decision": "Servicio. Texto blanco (7,10). Absorbe #295D7E."
+    },
+    {
+      "nombre": "servicio-azul-retirado",
+      "token": "color.marca.servicio-azul-retirado",
+      "valor": "#295D7E",
+      "fuente": "captura de la paleta, Secundarios: rótulo y muestra coinciden en sRGB",
+      "figma": null,
+      "decision": "Variante retirada: se unifica con #005E88 (ΔE2000 2,70, no se distinguen). Queda en el inventario, no se usa en interfaz."
+    },
+    {
+      "nombre": "servicio-naranja-rojizo",
+      "token": "color.marca.servicio-naranja-rojizo",
+      "valor": "#FA4616",
+      "fuente": "captura de la paleta, Secundarios: rótulo y muestra coinciden en sRGB",
+      "figma": null,
+      "decision": "Servicio. Texto negro encima (5,95); blanco solo grande (3,53)."
+    },
+    {
+      "nombre": "servicio-rojo",
+      "token": "color.marca.servicio-rojo",
+      "valor": "#ED0026",
+      "fuente": "captura de la paleta, Secundarios: rótulo y muestra coinciden en sRGB",
+      "figma": null,
+      "decision": "Servicio, como fondo o ilustración. Nunca en avisos: el error es #BC001C de otra rampa (etapa 2)."
+    }
+  ],
+  "tipografia": [
+    {
+      "familia": "Open Sans",
+      "pesos": [
+        400,
+        600,
+        700
+      ],
+      "uso": "Toda la interfaz (texto y títulos)",
+      "fuente": "CSS de avanzbanc.com (Google Fonts)",
+      "licencia": "SIL OFL 1.1, uso web libre",
+      "provisional": true,
+      "nota": "Falta que el banco confirme que es la tipografía de marca."
+    }
+  ],
+  "conflictos": [
+    {
+      "tema": "logo",
+      "detalle": "El SVG de avanzbanc.com usa #646569, #D7891F, #E1A700 y #B5002C; ninguno es #FF7500. O el logo del sitio es viejo o la paleta es de otra versión de la marca.",
+      "decide": "Ricardo con el banco, antes de la etapa 3"
+    }
+  ]
+}
