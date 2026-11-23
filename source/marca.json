@@ -1,0 +1,42 @@
+{
+  "color": {
+    "marca": {
+      "naranja": {
+        "$type": "color",
+        "$value": "#ff7500"
+      },
+      "gris-oscuro": {
+        "$type": "color",
+        "$value": "#646569"
+      },
+      "gris-medio": {
+        "$type": "color",
+        "$value": "#878c8e"
+      },
+      "gris-claro": {
+        "$type": "color",
+        "$value": "#c6c6c6"
+      },
+      "servicio-petroleo": {
+        "$type": "color",
+        "$value": "#27727b"
+      },
+      "servicio-azul": {
+        "$type": "color",
+        "$value": "#005e88"
+      },
+      "servicio-azul-retirado": {
+        "$type": "color",
+        "$value": "#295d7e"
+      },
+      "servicio-naranja-rojizo": {
+        "$type": "color",
+        "$value": "#fa4616"
+      },
+      "servicio-rojo": {
+        "$type": "color",
+        "$value": "#ed0026"
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "opacity": {
+    "ghost": {
+      "$type": "number",
+      "$value": 0.04
+    },
+    "hairline": {
+      "$type": "number",
+      "$value": 0.08
+    },
+    "subtle": {
+      "$type": "number",
+      "$value": 0.16
+    },
+    "mid": {
+      "$type": "number",
+      "$value": 0.42
+    },
+    "soft": {
+      "$type": "number",
+      "$value": 0.5
+    },
+    "medium": {
+      "$type": "number",
+      "$value": 0.6
+    },
+    "strong": {
+      "$type": "number",
+      "$value": 0.72
+    },
+    "high": {
+      "$type": "number",
+      "$value": 0.8
+    },
+    "full": {
+      "$type": "number",
+      "$value": 1
+    }
+  }
+}

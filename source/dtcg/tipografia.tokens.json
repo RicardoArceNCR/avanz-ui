@@ -1,0 +1,300 @@
+{
+  "typography": {
+    "styles": {
+      "display": {
+        "hero": {
+          "size": {
+            "$type": "number",
+            "$value": 56
+          },
+          "line-height": {
+            "$type": "number",
+            "$value": 64
+          },
+          "letter-spacing": {
+            "$type": "number",
+            "$value": -1.12
+          }
+        },
+        "xl": {
+          "size": {
+            "$type": "number",
+            "$value": 48
+          },
+          "line-height": {
+            "$type": "number",
+            "$value": 56
+          },
+          "letter-spacing": {
+            "$type": "number",
+            "$value": -0.96
+          }
+        },
+        "lg": {
+          "size": {
+            "$type": "number",
+            "$value": 40
+          },
+          "line-height": {
+            "$type": "number",
+            "$value": 48
+          },
+          "letter-spacing": {
+            "$type": "number",
+            "$value": -0.6
+          }
+        },
+        "md": {
+          "size": {
+            "$type": "number",
+            "$value": 36
+          },
+          "line-height": {
+            "$type": "number",
+            "$value": 44
+          },
+          "letter-spacing": {
+            "$type": "number",
+            "$value": -0.36
+          }
+        },
+        "sm": {
+          "size": {
+            "$type": "number",
+            "$value": 32
+          },
+          "line-height": {
+            "$type": "number",
+            "$value": 40
+          },
+          "letter-spacing": {
+            "$type": "number",
+            "$value": -0.32
+          }
+        }
+      },
+      "heading": {
+        "h1": {
+          "size": {
+            "$type": "number",
+            "$value": 28
+          },
+          "line-height": {
+            "$type": "number",
+            "$value": 36
+          },
+          "letter-spacing": {
+            "$type": "number",
+            "$value": -0.28
+          }
+        },
+        "h2": {
+          "size": {
+            "$type": "number",
+            "$value": 24
+          },
+          "line-height": {
+            "$type": "number",
+            "$value": 32
+          }
+        },
+        "h3": {
+          "size": {
+            "$type": "number",
+            "$value": 20
+          },
+          "line-height": {
+            "$type": "number",
+            "$value": 28
+          }
+        },
+        "h4": {
+          "size": {
+            "$type": "number",
+            "$value": 18
+          },
+          "line-height": {
+            "$type": "number",
+            "$value": 26
+          }
+        },
+        "h5": {
+          "size": {
+            "$type": "number",
+            "$value": 16
+          },
+          "line-height": {
+            "$type": "number",
+            "$value": 24
+          }
+        }
+      },
+      "body": {
+        "lg": {
+          "size": {
+            "$type": "number",
+            "$value": 18
+          },
+          "line-height": {
+            "$type": "number",
+            "$value": 28
+          }
+        },
+        "md": {
+          "size": {
+            "$type": "number",
+            "$value": 16
+          },
+          "line-height": {
+            "$type": "number",
+            "$value": 24
+          }
+        },
+        "sm": {
+          "size": {
+            "$type": "number",
+            "$value": 14
+          },
+          "line-height": {
+            "$type": "number",
+            "$value": 20
+          }
+        },
+        "xs": {
+          "size": {
+            "$type": "number",
+            "$value": 12
+          },
+          "line-height": {
+            "$type": "number",
+            "$value": 18
+          }
+        },
+        "lg-bold": {
+          "size": {
+            "$type": "number",
+            "$value": 18
+          },
+          "line-height": {
+            "$type": "number",
+            "$value": 28
+          }
+        },
+        "md-bold": {
+          "size": {
+            "$type": "number",
+            "$value": 16
+          },
+          "line-height": {
+            "$type": "number",
+            "$value": 24
+          }
+        },
+        "sm-bold": {
+          "size": {
+            "$type": "number",
+            "$value": 14
+          },
+          "line-height": {
+            "$type": "number",
+            "$value": 20
+          }
+        }
+      },
+      "label": {
+        "lg": {
+          "size": {
+            "$type": "number",
+            "$value": 16
+          },
+          "line-height": {
+            "$type": "number",
+            "$value": 20
+          }
+        },
+        "md": {
+          "size": {
+            "$type": "number",
+            "$value": 14
+          },
+          "line-height": {
+            "$type": "number",
+            "$value": 18
+          }
+        },
+        "sm": {
+          "size": {
+            "$type": "number",
+            "$value": 12
+          },
+          "line-height": {
+            "$type": "number",
+            "$value": 16
+          }
+        },
+        "xs": {
+          "size": {
+            "$type": "number",
+            "$value": 11
+          },
+          "line-height": {
+            "$type": "number",
+            "$value": 14
+          }
+        }
+      },
+      "overline": {
+        "lg": {
+          "size": {
+            "$type": "number",
+            "$value": 14
+          },
+          "line-height": {
+            "$type": "number",
+            "$value": 18
+          },
+          "letter-spacing": {
+            "$type": "number",
+            "$value": 1.12
+          }
+        },
+        "sm": {
+          "size": {
+            "$type": "number",
+            "$value": 12
+          },
+          "line-height": {
+            "$type": "number",
+            "$value": 16
+          },
+          "letter-spacing": {
+            "$type": "number",
+            "$value": 0.96
+          }
+        }
+      },
+      "code": {
+        "md": {
+          "size": {
+            "$type": "number",
+            "$value": 14
+          },
+          "line-height": {
+            "$type": "number",
+            "$value": 22
+          }
+        },
+        "sm": {
+          "size": {
+            "$type": "number",
+            "$value": 12
+          },
+          "line-height": {
+            "$type": "number",
+            "$value": 18
+          }
+        }
+      }
+    }
+  }
+}

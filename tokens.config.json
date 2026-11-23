@@ -1,0 +1,23 @@
+{
+  "figma": {
+    "collections": [
+      "marca", "primitivos", "semanticos", "componentes",
+      "spacing", "tipografia", "motion", "opacity", "breakpoints",
+      "shadow", "z-index"
+    ],
+    "required": {
+      "marca": [["color", "marca", "naranja"]],
+      "primitivos": [["color", "neutral", "50"], ["color", "brand", "500"], ["color", "danger", "700"], ["radius", "md"]],
+      "semanticos": [["text", "primary"], ["surface", "base"], ["brand", "main"], ["brand", "action"], ["focus", "ring-color"]],
+      "componentes": [["button", "primary", "bg"], ["input", "border"]],
+      "tipografia": [["typography", "styles", "body", "md", "size"]],
+      "spacing": [["spacing", "0"], ["spacing", "8"]],
+      "opacity": [["opacity", "ghost"], ["opacity", "high"]],
+      "motion": [["motion", "duration", "fast"]],
+      "breakpoints": [["breakpoint", "md"]],
+      "shadow": [["shadow", "sm"], ["shadow", "md"], ["shadow", "lg"]],
+      "z-index": [["z-index", "dropdown"], ["z-index", "modal"]]
+    },
+    "darkCrossCollection": []
+  }
+}

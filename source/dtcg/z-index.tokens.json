@@ -1,0 +1,26 @@
+{
+  "dropdown": {
+    "$type": "number",
+    "$value": 1000
+  },
+  "sticky": {
+    "$type": "number",
+    "$value": 1020
+  },
+  "overlay": {
+    "$type": "number",
+    "$value": 1030
+  },
+  "modal": {
+    "$type": "number",
+    "$value": 1040
+  },
+  "toast": {
+    "$type": "number",
+    "$value": 1050
+  },
+  "tooltip": {
+    "$type": "number",
+    "$value": 1060
+  }
+}
