@@ -4,6 +4,19 @@ Formato: [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/). Versiones:
 [SemVer](https://semver.org/lang/es/). Un cambio de valor de un token publicado
 es minor; renombrar o quitar un token es major.
 
+## [0.4.0] — 2026-11-23
+
+### Agregado
+
+- `color/marca/ambar` `#FFA401`, del banner del banco (provisional, ADR 0004).
+- `surface/ambar` y `text/on-ambar`, con su par de contraste (10,56:1).
+- `portada/*`: fondo ámbar, capa `brand/500` al 34 %, texto negro y fondo
+  blanco para el logo.
+
+### Cambiado
+
+- `check-units` acepta `--*-opacity` como ratio sin unidad.
+
 ## [0.3.0] — 2026-11-23
 
 ### Cambiado

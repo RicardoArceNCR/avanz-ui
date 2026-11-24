@@ -56,6 +56,8 @@ for fam, anclas in ANCLAS.items():
 for nombre, hx in M.items():
     if nombre == 'servicio-azul-retirado':
         continue  # se unifica con servicio-azul (decisión de Ricardo)
+    if nombre == 'ambar':
+        continue  # fondo de la portada, sin rampa: no es color de interfaz (ADR 0004)
     assert any(hx in r.values() for r in RAMPAS.values()), f'{nombre} {hx} no está en ninguna rampa'
 
 
@@ -121,10 +123,10 @@ def servicio(fam, stop, texto):
 semanticos = {
     'background': {'page': W, 'base': W, 'subtle': c('neutral', 50), 'strong': c('neutral', 100)},
     'surface': {'base': W, 'raised': W, 'container': c('neutral', 50), 'subtle': c('neutral', 50),
-                'inverse': c('neutral', 950), 'brand': c('brand', 500)},
+                'inverse': c('neutral', 950), 'brand': c('brand', 500), 'ambar': ref('color.marca.ambar')},
     'text': {'primary': c('neutral', 950), 'secondary': c('neutral', 700), 'tertiary': c('neutral', 700),
              'disabled': c('neutral', 400), 'inverse': W, 'brand': c('brand', 600), 'on-brand': W,
-             'on-brand-surface': K},
+             'on-brand-surface': K, 'on-ambar': K},
     'border': {'default': c('neutral', 300), 'subtle': c('neutral', 100), 'strong': c('neutral', 500),
                'brand': c('brand', 500), 'inverse': W},
     'divider': {'default': c('neutral', 300), 'strong': c('neutral', 500)},
@@ -173,6 +175,13 @@ componentes = {
         'bg': W, 'border': c('neutral', 200), 'text': c('neutral', 950), 'bg-hover': c('neutral', 50), 'border-hover': c('neutral', 300),
         'radius': ref('radius.xl', 'number'), 'padding': num(24),
         'shadow': txt('0px 1px 2px rgba(40, 41, 42, 0.06), 0px 3px 10px -3px rgba(40, 41, 42, 0.08)'),
+    },
+    # Portada del inicio (ADR 0004): ámbar del banner con capas del naranja de
+    # marca al 34 %. Donde se cruzan dos capas da #FF9400 y tres, #FF8901,
+    # como en el banner del banco. Texto, botón y brillo en negro.
+    'portada': {
+        'bg': ref('color.marca.ambar'), 'capa': c('brand', 500), 'capa-opacity': num(0.34),
+        'text': K, 'logo-bg': W,
     },
     'pill': {
         'radius': num(9999),

@@ -41,6 +41,10 @@
     "brand": {
       "$type": "color",
       "$value": "{color.brand.500}"
+    },
+    "ambar": {
+      "$type": "color",
+      "$value": "{color.marca.ambar}"
     }
   },
   "text": {
@@ -73,6 +77,10 @@
       "$value": "{color.white}"
     },
     "on-brand-surface": {
+      "$type": "color",
+      "$value": "{color.black}"
+    },
+    "on-ambar": {
       "$type": "color",
       "$value": "{color.black}"
     }

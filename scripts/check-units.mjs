@@ -28,6 +28,7 @@ const FILES = ["build/tokens.css", "build/tokens-dark.css"].filter((f) => exists
 const ALLOW = [
   { re: /^--z-index-/, why: "z-index es un entero por definicion" },
   { re: /^--opacity-/, why: "opacity es un ratio 0..1" },
+  { re: /-opacity$/, why: "opacidad de un componente (portada): ratio 0..1" },
   { re: /^--typography-weight-|-weight$/, why: "font-weight es un entero" },
   { re: /^--typography-leading-/, why: "line-height sin unidad es un ratio (intencional)" },
   {
