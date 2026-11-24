@@ -299,6 +299,58 @@
       "$value": "{color.white}"
     }
   },
+  "silueta": {
+    "inicio": {
+      "color": {
+        "$type": "color",
+        "$value": "{color.neutral.950}"
+      },
+      "opacity": {
+        "$type": "float",
+        "$value": 0.05
+      }
+    },
+    "logo": {
+      "color": {
+        "$type": "color",
+        "$value": "{color.neutral.950}"
+      },
+      "opacity": {
+        "$type": "float",
+        "$value": 0.045
+      }
+    },
+    "color": {
+      "color": {
+        "$type": "color",
+        "$value": "{color.black}"
+      },
+      "opacity": {
+        "$type": "float",
+        "$value": 0.04
+      }
+    },
+    "tipografia": {
+      "color": {
+        "$type": "color",
+        "$value": "{color.black}"
+      },
+      "opacity": {
+        "$type": "float",
+        "$value": 0.15
+      }
+    },
+    "sistema": {
+      "color": {
+        "$type": "color",
+        "$value": "{color.white}"
+      },
+      "opacity": {
+        "$type": "float",
+        "$value": 0.06
+      }
+    }
+  },
   "pill": {
     "radius": {
       "$type": "dimension",

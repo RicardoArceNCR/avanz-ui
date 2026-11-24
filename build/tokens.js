@@ -6145,6 +6145,188 @@ export default {
       path: ["portada", "logo-bg"],
     },
   },
+  silueta: {
+    inicio: {
+      color: {
+        $type: "color",
+        $value: "#28292a",
+        filePath: "source/componentes.json",
+        isSource: true,
+        original: {
+          $type: "color",
+          $value: "{color.neutral.950}",
+        },
+        name: "SiluetaInicioColor",
+        attributes: {
+          category: "silueta",
+          type: "inicio",
+          item: "color",
+        },
+        path: ["silueta", "inicio", "color"],
+      },
+      opacity: {
+        $type: "float",
+        $value: 0.05,
+        filePath: "source/componentes.json",
+        isSource: true,
+        original: {
+          $type: "float",
+          $value: 0.05,
+        },
+        name: "SiluetaInicioOpacity",
+        attributes: {
+          category: "silueta",
+          type: "inicio",
+          item: "opacity",
+        },
+        path: ["silueta", "inicio", "opacity"],
+      },
+    },
+    logo: {
+      color: {
+        $type: "color",
+        $value: "#28292a",
+        filePath: "source/componentes.json",
+        isSource: true,
+        original: {
+          $type: "color",
+          $value: "{color.neutral.950}",
+        },
+        name: "SiluetaLogoColor",
+        attributes: {
+          category: "silueta",
+          type: "logo",
+          item: "color",
+        },
+        path: ["silueta", "logo", "color"],
+      },
+      opacity: {
+        $type: "float",
+        $value: 0.045,
+        filePath: "source/componentes.json",
+        isSource: true,
+        original: {
+          $type: "float",
+          $value: 0.045,
+        },
+        name: "SiluetaLogoOpacity",
+        attributes: {
+          category: "silueta",
+          type: "logo",
+          item: "opacity",
+        },
+        path: ["silueta", "logo", "opacity"],
+      },
+    },
+    color: {
+      color: {
+        $type: "color",
+        $value: "#000000",
+        filePath: "source/componentes.json",
+        isSource: true,
+        original: {
+          $type: "color",
+          $value: "{color.black}",
+        },
+        name: "SiluetaColorColor",
+        attributes: {
+          category: "silueta",
+          type: "color",
+          item: "color",
+        },
+        path: ["silueta", "color", "color"],
+      },
+      opacity: {
+        $type: "float",
+        $value: 0.04,
+        filePath: "source/componentes.json",
+        isSource: true,
+        original: {
+          $type: "float",
+          $value: 0.04,
+        },
+        name: "SiluetaColorOpacity",
+        attributes: {
+          category: "silueta",
+          type: "color",
+          item: "opacity",
+        },
+        path: ["silueta", "color", "opacity"],
+      },
+    },
+    tipografia: {
+      color: {
+        $type: "color",
+        $value: "#000000",
+        filePath: "source/componentes.json",
+        isSource: true,
+        original: {
+          $type: "color",
+          $value: "{color.black}",
+        },
+        name: "SiluetaTipografiaColor",
+        attributes: {
+          category: "silueta",
+          type: "tipografia",
+          item: "color",
+        },
+        path: ["silueta", "tipografia", "color"],
+      },
+      opacity: {
+        $type: "float",
+        $value: 0.15,
+        filePath: "source/componentes.json",
+        isSource: true,
+        original: {
+          $type: "float",
+          $value: 0.15,
+        },
+        name: "SiluetaTipografiaOpacity",
+        attributes: {
+          category: "silueta",
+          type: "tipografia",
+          item: "opacity",
+        },
+        path: ["silueta", "tipografia", "opacity"],
+      },
+    },
+    sistema: {
+      color: {
+        $type: "color",
+        $value: "#ffffff",
+        filePath: "source/componentes.json",
+        isSource: true,
+        original: {
+          $type: "color",
+          $value: "{color.white}",
+        },
+        name: "SiluetaSistemaColor",
+        attributes: {
+          category: "silueta",
+          type: "sistema",
+          item: "color",
+        },
+        path: ["silueta", "sistema", "color"],
+      },
+      opacity: {
+        $type: "float",
+        $value: 0.06,
+        filePath: "source/componentes.json",
+        isSource: true,
+        original: {
+          $type: "float",
+          $value: 0.06,
+        },
+        name: "SiluetaSistemaOpacity",
+        attributes: {
+          category: "silueta",
+          type: "sistema",
+          item: "opacity",
+        },
+        path: ["silueta", "sistema", "opacity"],
+      },
+    },
+  },
   pill: {
     radius: {
       $type: "dimension",
