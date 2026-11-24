@@ -158,6 +158,23 @@ export default {
         },
         path: ["color", "marca", "servicio-rojo"],
       },
+      ambar: {
+        $type: "color",
+        $value: "#ffa401",
+        filePath: "source/marca.json",
+        isSource: true,
+        original: {
+          $type: "color",
+          $value: "#ffa401",
+        },
+        name: "ColorMarcaAmbar",
+        attributes: {
+          category: "color",
+          type: "marca",
+          item: "ambar",
+        },
+        path: ["color", "marca", "ambar"],
+      },
     },
     white: {
       $type: "color",
@@ -3903,6 +3920,22 @@ export default {
       },
       path: ["surface", "brand"],
     },
+    ambar: {
+      $type: "color",
+      $value: "#ffa401",
+      filePath: "source/semanticos.json",
+      isSource: true,
+      original: {
+        $type: "color",
+        $value: "{color.marca.ambar}",
+      },
+      name: "SurfaceAmbar",
+      attributes: {
+        category: "surface",
+        type: "ambar",
+      },
+      path: ["surface", "ambar"],
+    },
   },
   text: {
     primary: {
@@ -4032,6 +4065,22 @@ export default {
         type: "on-brand-surface",
       },
       path: ["text", "on-brand-surface"],
+    },
+    "on-ambar": {
+      $type: "color",
+      $value: "#000000",
+      filePath: "source/semanticos.json",
+      isSource: true,
+      original: {
+        $type: "color",
+        $value: "{color.black}",
+      },
+      name: "TextOnAmbar",
+      attributes: {
+        category: "text",
+        type: "on-ambar",
+      },
+      path: ["text", "on-ambar"],
     },
   },
   border: {
@@ -6012,6 +6061,88 @@ export default {
         type: "shadow",
       },
       path: ["card", "shadow"],
+    },
+  },
+  portada: {
+    bg: {
+      $type: "color",
+      $value: "#ffa401",
+      filePath: "source/componentes.json",
+      isSource: true,
+      original: {
+        $type: "color",
+        $value: "{color.marca.ambar}",
+      },
+      name: "PortadaBg",
+      attributes: {
+        category: "portada",
+        type: "bg",
+      },
+      path: ["portada", "bg"],
+    },
+    capa: {
+      $type: "color",
+      $value: "#ff7500",
+      filePath: "source/componentes.json",
+      isSource: true,
+      original: {
+        $type: "color",
+        $value: "{color.brand.500}",
+      },
+      name: "PortadaCapa",
+      attributes: {
+        category: "portada",
+        type: "capa",
+      },
+      path: ["portada", "capa"],
+    },
+    "capa-opacity": {
+      $type: "float",
+      $value: 0.34,
+      filePath: "source/componentes.json",
+      isSource: true,
+      original: {
+        $type: "float",
+        $value: 0.34,
+      },
+      name: "PortadaCapaOpacity",
+      attributes: {
+        category: "portada",
+        type: "capa-opacity",
+      },
+      path: ["portada", "capa-opacity"],
+    },
+    text: {
+      $type: "color",
+      $value: "#000000",
+      filePath: "source/componentes.json",
+      isSource: true,
+      original: {
+        $type: "color",
+        $value: "{color.black}",
+      },
+      name: "PortadaText",
+      attributes: {
+        category: "portada",
+        type: "text",
+      },
+      path: ["portada", "text"],
+    },
+    "logo-bg": {
+      $type: "color",
+      $value: "#ffffff",
+      filePath: "source/componentes.json",
+      isSource: true,
+      original: {
+        $type: "color",
+        $value: "{color.white}",
+      },
+      name: "PortadaLogoBg",
+      attributes: {
+        category: "portada",
+        type: "logo-bg",
+      },
+      path: ["portada", "logo-bg"],
     },
   },
   pill: {

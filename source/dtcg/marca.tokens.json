@@ -126,6 +126,20 @@
           "hex": "#ED0026"
         },
         "$description": "Captura de la paleta en sRGB (provisional), Secundarios."
+      },
+      "ambar": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            1.0,
+            0.643137,
+            0.003922
+          ],
+          "alpha": 1,
+          "hex": "#FFA401"
+        },
+        "$description": "Fondo del banner del sitio del banco (docs/avanz/banner-bg-desktop.jpg), provisional. Solo portada."
       }
     }
   }

@@ -79,6 +79,14 @@
       "fuente": "captura de la paleta, Secundarios: rótulo y muestra coinciden en sRGB",
       "figma": null,
       "decision": "Servicio, como fondo o ilustración. Nunca en avisos: el error es #BC001C de otra rampa (etapa 2)."
+    },
+    {
+      "nombre": "ambar",
+      "token": "color.marca.ambar",
+      "valor": "#FFA401",
+      "fuente": "banner del sitio del banco (docs/avanz/banner-bg-desktop.jpg, sha256 e16f2cdc…): píxel de fondo, 238 200 de 238 200 muestras en la zona lisa",
+      "figma": null,
+      "decision": "Fondo de la portada del inicio, con capas de #FF7500 al 34 % (decisión de Ricardo, 2026-11-23). Solo superficie, con texto negro (10,56). Nunca botón ni texto: #B85200 sobre ámbar da 2,49 y el gris del logo 2,93. Sin rampa: no es color de interfaz."
     }
   ],
   "tipografia": [

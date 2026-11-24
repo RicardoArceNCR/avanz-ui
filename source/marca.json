@@ -36,6 +36,10 @@
       "servicio-rojo": {
         "$type": "color",
         "$value": "#ed0026"
+      },
+      "ambar": {
+        "$type": "color",
+        "$value": "#ffa401"
       }
     }
   }

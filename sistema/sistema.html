@@ -13,6 +13,7 @@
   --color-marca-servicio-azul-retirado: #295d7e;
   --color-marca-servicio-naranja-rojizo: #fa4616;
   --color-marca-servicio-rojo: #ed0026;
+  --color-marca-ambar: #ffa401;
   --color-white: #ffffff;
   --color-black: #000000;
   --color-neutral-50: #f7f7f6;
@@ -228,6 +229,7 @@
   --input-padding-y: 10px;
   --card-padding: 24px;
   --card-shadow: 0px 1px 2px rgba(40, 41, 42, 0.06), 0px 3px 10px -3px rgba(40, 41, 42, 0.08);
+  --portada-capa-opacity: 0.34;
   --pill-radius: 9999px;
   --pill-sm-padding-x: 8px;
   --pill-md-padding-x: 12px;
@@ -286,6 +288,7 @@
   --surface-subtle: var(--color-neutral-50);
   --surface-inverse: var(--color-neutral-950);
   --surface-brand: var(--color-brand-500);
+  --surface-ambar: var(--color-marca-ambar);
   --text-primary: var(--color-neutral-950);
   --text-secondary: var(--color-neutral-700);
   --text-tertiary: var(--color-neutral-700);
@@ -294,6 +297,7 @@
   --text-brand: var(--color-brand-600);
   --text-on-brand: var(--color-white);
   --text-on-brand-surface: var(--color-black);
+  --text-on-ambar: var(--color-black);
   --border-default: var(--color-neutral-300);
   --border-subtle: var(--color-neutral-100);
   --border-strong: var(--color-neutral-500);
@@ -393,6 +397,10 @@
   --card-bg-hover: var(--color-neutral-50);
   --card-border-hover: var(--color-neutral-300);
   --card-radius: var(--radius-xl);
+  --portada-bg: var(--color-marca-ambar);
+  --portada-capa: var(--color-brand-500);
+  --portada-text: var(--color-black);
+  --portada-logo-bg: var(--color-white);
   --pill-base-bg: var(--color-neutral-50);
   --pill-base-text: var(--color-neutral-800);
   --pill-base-border: var(--color-neutral-300);
@@ -593,10 +601,10 @@ footer.end { padding-top: var(--spacing-10); border-top: 1px solid var(--divider
 
 <main>
 <div class="open">
-  <p class="over">Sistema · @avanz/ui v0.2.0</p>
+  <p class="over">Sistema · @avanz/ui v0.3.0</p>
   <h1>Avanz</h1>
   <p class="lede">Los tokens de Avanz tal como los publica el paquete. Todo lo que ves en esta página sale de <code>source/dtcg</code>, compilado a <code>tokens.css</code>. Los colores son provisionales: salen de capturas de la paleta y se confirman con el manual o el banco antes de publicar.</p>
-  <div class="facts"><span><b>9</b> rampas de color</span><span><b>400</b> tokens en :root</span><span><b>1</b> tema (claro)</span><span>Fuente: <code>@avanz/ui</code></span></div>
+  <div class="facts"><span><b>9</b> rampas de color</span><span><b>408</b> tokens en :root</span><span><b>1</b> tema (claro)</span><span>Fuente: <code>@avanz/ui</code></span></div>
 </div>
 
 <section id="marca">
@@ -740,7 +748,7 @@ footer.end { padding-top: var(--spacing-10); border-top: 1px solid var(--divider
 </section>
 
 <section id="contraste">
-  <div class="sh"><h2>Contraste</h2><p>Los pares de <code>scripts/contrast-pairs.json</code>, medidos con WCAG 2; APCA Lc va como referencia. 64 pares medidos en el tema claro: 0 fallan y están en ALLOW, 0 fallan sin excepción. El mismo archivo bloquea el build en <code>check-contrast.mjs</code>.</p></div>
+  <div class="sh"><h2>Contraste</h2><p>Los pares de <code>scripts/contrast-pairs.json</code>, medidos con WCAG 2; APCA Lc va como referencia. 65 pares medidos en el tema claro: 0 fallan y están en ALLOW, 0 fallan sin excepción. El mismo archivo bloquea el build en <code>check-contrast.mjs</code>.</p></div>
   <div class="tablewrap"><table>
     <thead><tr><th>Tema</th><th>Muestra</th><th>Primer plano</th><th>Fondo</th><th>WCAG</th><th>Lc</th><th>Uso</th><th>Estado</th></tr></thead>
     <tbody><tr><td>Claro</td><td><span class="pair sm" style="--bg:#FFFFFF;--fg:#28292A">Aa</span></td><td><code>--text-primary</code></td><td><code>--background-page</code></td><td class="num">14.57</td><td class="num">101</td><td>texto</td><td><span class="state ok">pasa 4.5</span></td></tr>
@@ -806,7 +814,8 @@ footer.end { padding-top: var(--spacing-10); border-top: 1px solid var(--divider
 <tr><td>Claro</td><td><span class="pair sm" style="--bg:#EFF9FA;--fg:#215B62">Aa</span></td><td><code>--servicio-petroleo-strong</code></td><td><code>--servicio-petroleo-subtle</code></td><td class="num">7.16</td><td class="num">82</td><td>texto sobre servicio</td><td><span class="state ok">pasa 4.5</span></td></tr>
 <tr><td>Claro</td><td><span class="pair sm" style="--bg:#EFF8FF;--fg:#005E88">Aa</span></td><td><code>--servicio-azul-strong</code></td><td><code>--servicio-azul-subtle</code></td><td class="num">6.61</td><td class="num">79</td><td>texto sobre servicio</td><td><span class="state ok">pasa 4.5</span></td></tr>
 <tr><td>Claro</td><td><span class="pair sm" style="--bg:#FFF4F1;--fg:#952100">Aa</span></td><td><code>--servicio-rojizo-strong</code></td><td><code>--servicio-rojizo-subtle</code></td><td class="num">7.80</td><td class="num">82</td><td>texto sobre servicio</td><td><span class="state ok">pasa 4.5</span></td></tr>
-<tr><td>Claro</td><td><span class="pair sm" style="--bg:#FFF4F3;--fg:#9E0016">Aa</span></td><td><code>--servicio-rojo-strong</code></td><td><code>--servicio-rojo-subtle</code></td><td class="num">7.90</td><td class="num">82</td><td>texto sobre servicio</td><td><span class="state ok">pasa 4.5</span></td></tr></tbody>
+<tr><td>Claro</td><td><span class="pair sm" style="--bg:#FFF4F3;--fg:#9E0016">Aa</span></td><td><code>--servicio-rojo-strong</code></td><td><code>--servicio-rojo-subtle</code></td><td class="num">7.90</td><td class="num">82</td><td>texto sobre servicio</td><td><span class="state ok">pasa 4.5</span></td></tr>
+<tr><td>Claro</td><td><span class="pair sm" style="--bg:#FFA401;--fg:#000000">Aa</span></td><td><code>--text-on-ambar</code></td><td><code>--surface-ambar</code></td><td class="num">10.56</td><td class="num">66</td><td>texto sobre el ámbar de la portada</td><td><span class="state ok">pasa 4.5</span></td></tr></tbody>
   </table></div>
 </section>
 </main>

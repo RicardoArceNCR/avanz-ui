@@ -396,6 +396,12 @@
       "background-page",
       0,
       "divisor decorativo"
+    ],
+    [
+      "text-on-ambar",
+      "surface-ambar",
+      4.5,
+      "texto sobre el ámbar de la portada"
     ]
   ]
 }
