@@ -4,6 +4,20 @@ Formato: [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/). Versiones:
 [SemVer](https://semver.org/lang/es/). Un cambio de valor de un token publicado
 es minor; renombrar o quitar un token es major.
 
+## [0.5.0] — 2026-11-24
+
+### Agregado
+
+- `silueta/{inicio,logo,color,tipografia,sistema}/{color,opacity}`: siluetas
+  tono sobre tono en las portadas (ADR 0005).
+- `scripts/check-siluetas.mjs` en `npm test`: el texto de cada portada pasa
+  4,5:1 sobre el cruce de las siluetas.
+
+### Obsoleto
+
+- `portada/*`, `surface/ambar` y `text/on-ambar`: sin uso en el portal; se
+  conservan para no romper.
+
 ## [0.4.0] — 2026-11-23
 
 ### Agregado

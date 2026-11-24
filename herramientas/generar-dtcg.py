@@ -176,12 +176,24 @@ componentes = {
         'radius': ref('radius.xl', 'number'), 'padding': num(24),
         'shadow': txt('0px 1px 2px rgba(40, 41, 42, 0.06), 0px 3px 10px -3px rgba(40, 41, 42, 0.08)'),
     },
+    # Sin uso en el portal desde la 0.5.0 (ADR 0005): la portada pasó a blanco
+    # con siluetas. Se conserva para no romper a quien lo use.
     # Portada del inicio (ADR 0004): ámbar del banner con capas del naranja de
     # marca al 34 %. Donde se cruzan dos capas da #FF9400 y tres, #FF8901,
     # como en el banner del banco. Texto, botón y brillo en negro.
     'portada': {
         'bg': ref('color.marca.ambar'), 'capa': c('brand', 500), 'capa-opacity': num(0.34),
         'text': K, 'logo-bg': W,
+    },
+    # Siluetas de las portadas (ADR 0005): color y opacidad de cada copia.
+    # Donde se cruzan dos copias la opacidad se compone (1 − (1 − α)²); el
+    # tope lo revisa scripts/check-siluetas.mjs contra el texto de cada portada.
+    'silueta': {
+        'inicio': {'color': c('neutral', 950), 'opacity': num(0.05)},
+        'logo': {'color': c('neutral', 950), 'opacity': num(0.045)},
+        'color': {'color': K, 'opacity': num(0.04)},
+        'tipografia': {'color': K, 'opacity': num(0.15)},
+        'sistema': {'color': W, 'opacity': num(0.06)},
     },
     'pill': {
         'radius': num(9999),
