@@ -145,11 +145,15 @@ semanticos = {
 componentes = {
     'button': {
         'font-weight': num(700),  # Segoe UI no tiene Semibold
-        'radius': ref('radius.md', 'number'),
+        # Radio 12 en botones y campos (ADR 0003: más redondo, pedido de Ricardo).
+        'radius': ref('radius.lg', 'number'),
         # Hover: además del color, una sombra (especialistas, 2026-11-23).
+        # Sombras teñidas con neutral/950, nunca negro puro (ADR 0003).
         'primary': {'bg': c('brand', 600), 'bg-hover': c('brand', 700), 'bg-press': c('brand', 800), 'text': W, 'border': c('brand', 600),
-                    'shadow-hover': txt('0px 1px 2px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.10)')},
-        'secondary': {'bg': W, 'bg-hover': c('neutral', 50), 'bg-press': c('neutral', 100), 'text': c('neutral', 950), 'border': c('neutral', 500)},
+                    'shadow': txt('0px 1px 2px rgba(40, 41, 42, 0.12)'),
+                    'shadow-hover': txt('0px 2px 4px -1px rgba(40, 41, 42, 0.14), 0px 6px 12px -4px rgba(40, 41, 42, 0.16)')},
+        'secondary': {'bg': W, 'bg-hover': c('neutral', 50), 'bg-press': c('neutral', 100), 'text': c('neutral', 950), 'border': c('neutral', 500),
+                      'shadow': txt('0px 1px 2px rgba(40, 41, 42, 0.08)')},
         'ghost': {'bg': W, 'bg-hover': c('neutral', 50), 'bg-press': c('neutral', 100), 'text': c('brand', 700), 'border': W},
         # Destructivo con contorno: relleno rojo solo en la confirmación (danger-solid),
         # nunca junto al primario. Disabled gris legible (especialistas, 2026-11-23).
@@ -163,12 +167,12 @@ componentes = {
         'border': c('neutral', 500), 'border-hover': c('neutral', 700), 'border-focus': c('brand', 600),
         'border-error': c('danger', 700), 'border-success': c('success', 700), 'border-disabled': c('neutral', 200),
         'text': c('neutral', 950), 'placeholder': c('neutral', 700), 'label': c('neutral', 800), 'text-disabled': c('neutral', 400),
-        'radius': ref('radius.md', 'number'), 'padding-x': num(12), 'padding-y': num(10),
+        'radius': ref('radius.lg', 'number'), 'padding-x': num(12), 'padding-y': num(10),
     },
     'card': {
         'bg': W, 'border': c('neutral', 200), 'text': c('neutral', 950), 'bg-hover': c('neutral', 50), 'border-hover': c('neutral', 300),
-        'radius': ref('radius.lg', 'number'), 'padding': num(24),
-        'shadow': txt('0px 1px 2px rgba(0, 0, 0, 0.06), 0px 1px 3px rgba(0, 0, 0, 0.10)'),
+        'radius': ref('radius.xl', 'number'), 'padding': num(24),
+        'shadow': txt('0px 1px 2px rgba(40, 41, 42, 0.06), 0px 3px 10px -3px rgba(40, 41, 42, 0.08)'),
     },
     'pill': {
         'radius': num(9999),
@@ -215,9 +219,11 @@ motion = {'motion': {
 opacity = {'opacity': {k: num(v) for k, v in [('ghost', 0.04), ('hairline', 0.08), ('subtle', 0.16), ('mid', 0.42), ('soft', 0.5),
                                               ('medium', 0.6), ('strong', 0.72), ('high', 0.8), ('full', 1)]}}
 breakpoints = {'breakpoint': {k: num(v) for k, v in [('sm', 640), ('md', 768), ('lg', 1024), ('xl', 1280), ('2xl', 1536)]}}
-shadow = {k: txt(v) for k, v in [('sm', '0px 1px 2px rgba(0, 0, 0, 0.06), 0px 1px 3px rgba(0, 0, 0, 0.10)'),
-                                 ('md', '0px 4px 6px -1px rgba(0, 0, 0, 0.10), 0px 2px 4px -2px rgba(0, 0, 0, 0.10)'),
-                                 ('lg', '0px 10px 15px -3px rgba(0, 0, 0, 0.10), 0px 4px 6px -4px rgba(0, 0, 0, 0.10)')]}
+# Dos capas (contacto + ambiente), luz cenital, teñidas con neutral/950 (ADR 0003).
+# sm: tarjeta · md: flotante (menú, aviso) · lg: destacado (uno por página).
+shadow = {k: txt(v) for k, v in [('sm', '0px 1px 2px rgba(40, 41, 42, 0.06), 0px 3px 10px -3px rgba(40, 41, 42, 0.08)'),
+                                 ('md', '0px 2px 4px -1px rgba(40, 41, 42, 0.07), 0px 14px 28px -8px rgba(40, 41, 42, 0.14)'),
+                                 ('lg', '0px 4px 8px -2px rgba(40, 41, 42, 0.08), 0px 24px 48px -12px rgba(40, 41, 42, 0.20)')]}
 zindex = {k: num(v) for k, v in [('dropdown', 1000), ('sticky', 1020), ('overlay', 1030), ('modal', 1040), ('toast', 1050), ('tooltip', 1060)]}
 
 for nombre, datos in [('primitivos', primitivos), ('semanticos', semanticos), ('componentes', componentes),

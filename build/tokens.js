@@ -4952,12 +4952,12 @@ export default {
     },
     radius: {
       $type: "dimension",
-      $value: "8px",
+      $value: "12px",
       filePath: "source/componentes.json",
       isSource: true,
       original: {
         $type: "dimension",
-        $value: "{radius.md}",
+        $value: "{radius.lg}",
       },
       name: "ButtonRadius",
       attributes: {
@@ -5052,16 +5052,33 @@ export default {
         },
         path: ["button", "primary", "border"],
       },
+      shadow: {
+        $type: "string",
+        $value: "0px 1px 2px rgba(40, 41, 42, 0.12)",
+        filePath: "source/componentes.json",
+        isSource: true,
+        original: {
+          $type: "string",
+          $value: "0px 1px 2px rgba(40, 41, 42, 0.12)",
+        },
+        name: "ButtonPrimaryShadow",
+        attributes: {
+          category: "button",
+          type: "primary",
+          item: "shadow",
+        },
+        path: ["button", "primary", "shadow"],
+      },
       "shadow-hover": {
         $type: "string",
         $value:
-          "0px 1px 2px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.10)",
+          "0px 2px 4px -1px rgba(40, 41, 42, 0.14), 0px 6px 12px -4px rgba(40, 41, 42, 0.16)",
         filePath: "source/componentes.json",
         isSource: true,
         original: {
           $type: "string",
           $value:
-            "0px 1px 2px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.10)",
+            "0px 2px 4px -1px rgba(40, 41, 42, 0.14), 0px 6px 12px -4px rgba(40, 41, 42, 0.16)",
         },
         name: "ButtonPrimaryShadowHover",
         attributes: {
@@ -5157,6 +5174,23 @@ export default {
           item: "border",
         },
         path: ["button", "secondary", "border"],
+      },
+      shadow: {
+        $type: "string",
+        $value: "0px 1px 2px rgba(40, 41, 42, 0.08)",
+        filePath: "source/componentes.json",
+        isSource: true,
+        original: {
+          $type: "string",
+          $value: "0px 1px 2px rgba(40, 41, 42, 0.08)",
+        },
+        name: "ButtonSecondaryShadow",
+        attributes: {
+          category: "button",
+          type: "secondary",
+          item: "shadow",
+        },
+        path: ["button", "secondary", "shadow"],
       },
     },
     ghost: {
@@ -5801,12 +5835,12 @@ export default {
     },
     radius: {
       $type: "dimension",
-      $value: "8px",
+      $value: "12px",
       filePath: "source/componentes.json",
       isSource: true,
       original: {
         $type: "dimension",
-        $value: "{radius.md}",
+        $value: "{radius.lg}",
       },
       name: "InputRadius",
       attributes: {
@@ -5931,12 +5965,12 @@ export default {
     },
     radius: {
       $type: "dimension",
-      $value: "12px",
+      $value: "16px",
       filePath: "source/componentes.json",
       isSource: true,
       original: {
         $type: "dimension",
-        $value: "{radius.lg}",
+        $value: "{radius.xl}",
       },
       name: "CardRadius",
       attributes: {
@@ -5964,13 +5998,13 @@ export default {
     shadow: {
       $type: "string",
       $value:
-        "0px 1px 2px rgba(0, 0, 0, 0.06), 0px 1px 3px rgba(0, 0, 0, 0.10)",
+        "0px 1px 2px rgba(40, 41, 42, 0.06), 0px 3px 10px -3px rgba(40, 41, 42, 0.08)",
       filePath: "source/componentes.json",
       isSource: true,
       original: {
         $type: "string",
         $value:
-          "0px 1px 2px rgba(0, 0, 0, 0.06), 0px 1px 3px rgba(0, 0, 0, 0.10)",
+          "0px 1px 2px rgba(40, 41, 42, 0.06), 0px 3px 10px -3px rgba(40, 41, 42, 0.08)",
       },
       name: "CardShadow",
       attributes: {
@@ -6834,13 +6868,13 @@ export default {
     sm: {
       $type: "string",
       $value:
-        "0px 1px 2px rgba(0, 0, 0, 0.06), 0px 1px 3px rgba(0, 0, 0, 0.10)",
+        "0px 1px 2px rgba(40, 41, 42, 0.06), 0px 3px 10px -3px rgba(40, 41, 42, 0.08)",
       filePath: "source/shadow.json",
       isSource: true,
       original: {
         $type: "string",
         $value:
-          "0px 1px 2px rgba(0, 0, 0, 0.06), 0px 1px 3px rgba(0, 0, 0, 0.10)",
+          "0px 1px 2px rgba(40, 41, 42, 0.06), 0px 3px 10px -3px rgba(40, 41, 42, 0.08)",
       },
       name: "ShadowSm",
       attributes: {
@@ -6852,13 +6886,13 @@ export default {
     md: {
       $type: "string",
       $value:
-        "0px 4px 6px -1px rgba(0, 0, 0, 0.10), 0px 2px 4px -2px rgba(0, 0, 0, 0.10)",
+        "0px 2px 4px -1px rgba(40, 41, 42, 0.07), 0px 14px 28px -8px rgba(40, 41, 42, 0.14)",
       filePath: "source/shadow.json",
       isSource: true,
       original: {
         $type: "string",
         $value:
-          "0px 4px 6px -1px rgba(0, 0, 0, 0.10), 0px 2px 4px -2px rgba(0, 0, 0, 0.10)",
+          "0px 2px 4px -1px rgba(40, 41, 42, 0.07), 0px 14px 28px -8px rgba(40, 41, 42, 0.14)",
       },
       name: "ShadowMd",
       attributes: {
@@ -6870,13 +6904,13 @@ export default {
     lg: {
       $type: "string",
       $value:
-        "0px 10px 15px -3px rgba(0, 0, 0, 0.10), 0px 4px 6px -4px rgba(0, 0, 0, 0.10)",
+        "0px 4px 8px -2px rgba(40, 41, 42, 0.08), 0px 24px 48px -12px rgba(40, 41, 42, 0.20)",
       filePath: "source/shadow.json",
       isSource: true,
       original: {
         $type: "string",
         $value:
-          "0px 10px 15px -3px rgba(0, 0, 0, 0.10), 0px 4px 6px -4px rgba(0, 0, 0, 0.10)",
+          "0px 4px 8px -2px rgba(40, 41, 42, 0.08), 0px 24px 48px -12px rgba(40, 41, 42, 0.20)",
       },
       name: "ShadowLg",
       attributes: {
