@@ -2,7 +2,7 @@
   "button": {
     "font-weight": {
       "$type": "float",
-      "$value": 700
+      "$value": 600
     },
     "radius": {
       "$type": "dimension",

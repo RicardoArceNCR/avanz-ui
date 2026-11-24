@@ -26,27 +26,27 @@ from color import wcag, apca  # noqa: E402
 # Orden y rotulo de las rampas (color/<familia>/<stop>).
 FAMILIES = ['neutral', 'brand', 'petroleo', 'azul', 'rojizo', 'rojo', 'danger', 'success', 'warning']
 FAM_LABEL = {
-    'neutral': 'neutral · grises de marca: #C6C6C6 en 300, #878C8E en 500, #646569 en 700',
+    'neutral': 'neutral · grises de marca: #C6C6C6 en 300, #878C8E en 500, #63666A en 700',
     'brand': 'brand · naranja #FF7500 en 500; acción #B85200, hover #A74A00 y press #9E4500 en 600–800',
     'petroleo': 'petroleo · servicio, #27727B en 700',
     'azul': 'azul · servicio, #005E88 en 800 (absorbe #295D7E)',
     'rojizo': 'rojizo · servicio, #FA4616 en 500, con texto negro',
     'rojo': 'rojo · servicio, #ED0026 en 600; nunca en avisos',
-    'danger': 'danger · error #BC001C en 700, siempre con ícono y texto',
+    'danger': 'danger · error #A40040 en 700 (carmesí, lejos del rojo 186 C del logo), siempre con ícono y texto',
     'success': 'success · éxito, propuesta del estudio (no es color de marca)',
     'warning': 'warning · aviso, propuesta del estudio (no es color de marca)',
 }
 BRAND = [  # familia/stop, rol en los semanticos
     ('brand', 500, 'Naranja de marca. brand/main, surface/brand: superficies, ilustración y marca, con texto negro. Nunca texto blanco.'),
     ('brand', 600, 'brand/action, text/brand. Botón primario con texto blanco; hover 700, press 800.'),
-    ('neutral', 700, 'text/secondary (#646569). El texto principal es neutral/950.'),
+    ('neutral', 700, 'text/secondary (#63666A, Cool Gray 10 C). El texto principal es neutral/950.'),
     ('neutral', 500, 'border/strong, input/border (#878C8E): bordes de campo y control.'),
     ('neutral', 300, 'border/default, divider (#C6C6C6): solo divisores decorativos.'),
     ('petroleo', 700, 'servicio/petroleo.'),
     ('azul', 800, 'servicio/azul.'),
     ('rojizo', 500, 'servicio/rojizo, con texto negro.'),
     ('rojo', 600, 'servicio/rojo: fondo o ilustración de servicio, nunca en avisos.'),
-    ('danger', 700, 'feedback/error, button/danger (#BC001C). Siempre con ícono y texto.'),
+    ('danger', 700, 'feedback/error, button/danger (#A40040). Siempre con ícono y texto.'),
 ]
 TYPE = [  # clase, muestra, familia
     ('display-hero', 'Avanz', 'display'),

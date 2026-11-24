@@ -2,6 +2,8 @@
 
 Estado: propuesta para volver a aprobar las etapas 1 y 2 — 2026-11-23
 
+> Actualizada por la [0006](0006-marca-del-manual-del-cliente.md): el ámbar es el Pantone 137 C `#FFA300` del manual y deja de ser solo del banner.
+
 ## Contexto
 
 El banner del sitio del banco (`docs/avanz/banner-bg-desktop.jpg` del sitio)

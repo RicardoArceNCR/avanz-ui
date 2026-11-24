@@ -144,11 +144,11 @@
     },
     "font-display": {
       "$type": "string",
-      "$value": "Segoe UI"
+      "$value": "Kohinoor"
     },
     "font-body": {
       "$type": "string",
-      "$value": "Segoe UI"
+      "$value": "Open Sans"
     }
   },
   "servicio": {

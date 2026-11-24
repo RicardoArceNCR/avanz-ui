@@ -3,10 +3,12 @@
 Tokens de diseño de Avanz. `source/dtcg/` es la fuente de verdad; el paquete
 publica el CSS que consume el sitio. El sitio no redefine la paleta.
 
-**Estado:** v0.1.0, provisional. Sin manual ni Figma: los colores oficiales
-salen de capturas de la paleta convertidas a sRGB; la tipografía es Segoe UI,
-con licencia web pendiente. Se confirman con el manual o el banco antes de publicar
-(etapa 4 del proceso del estudio).
+**Estado:** v0.6.0. Los colores principales salen del manual del cliente
+(«Manual Logo Book», p. 04: Pantones 2018 C, 137 C, 186 C y Cool Gray 10 C);
+los grises medio y claro y los colores de servicio siguen saliendo de capturas
+hasta que el banco los confirme. Tipografía del manual: Kohinoor en títulos
+(licencia web pendiente; no se publica sin ella) y Open Sans en lectura
+(ADR 0006).
 
 ## Uso
 
@@ -25,7 +27,7 @@ Solo tema claro en v0.1.0.
 
 | Archivo | Qué es | Quién lo toca |
 | --- | --- | --- |
-| `source/dtcg/marca.tokens.json` | Los 9 colores oficiales (etapa 1) | Solo reabriendo la etapa 1 |
+| `source/dtcg/marca.tokens.json` | Los colores oficiales (etapa 1) | Solo reabriendo la etapa 1 |
 | `herramientas/generar-dtcg.py` | Rampas, roles y componentes, anclados en `marca` | Etapa 2 |
 | `source/dtcg/*.tokens.json` | Salida del generador, versionada | Nadie a mano |
 | `scripts/contrast-pairs.json` | Pares que bloquean el build | Etapa 2 |

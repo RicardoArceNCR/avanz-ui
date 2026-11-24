@@ -22,14 +22,48 @@ export default {
         },
         path: ["color", "marca", "naranja"],
       },
-      "gris-oscuro": {
+      ambar: {
         $type: "color",
-        $value: "#646569",
+        $value: "#ffa300",
         filePath: "source/marca.json",
         isSource: true,
         original: {
           $type: "color",
-          $value: "#646569",
+          $value: "#ffa300",
+        },
+        name: "ColorMarcaAmbar",
+        attributes: {
+          category: "color",
+          type: "marca",
+          item: "ambar",
+        },
+        path: ["color", "marca", "ambar"],
+      },
+      rojo: {
+        $type: "color",
+        $value: "#c8102e",
+        filePath: "source/marca.json",
+        isSource: true,
+        original: {
+          $type: "color",
+          $value: "#c8102e",
+        },
+        name: "ColorMarcaRojo",
+        attributes: {
+          category: "color",
+          type: "marca",
+          item: "rojo",
+        },
+        path: ["color", "marca", "rojo"],
+      },
+      "gris-oscuro": {
+        $type: "color",
+        $value: "#63666a",
+        filePath: "source/marca.json",
+        isSource: true,
+        original: {
+          $type: "color",
+          $value: "#63666a",
         },
         name: "ColorMarcaGrisOscuro",
         attributes: {
@@ -157,23 +191,6 @@ export default {
           item: "servicio-rojo",
         },
         path: ["color", "marca", "servicio-rojo"],
-      },
-      ambar: {
-        $type: "color",
-        $value: "#ffa401",
-        filePath: "source/marca.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "#ffa401",
-        },
-        name: "ColorMarcaAmbar",
-        attributes: {
-          category: "color",
-          type: "marca",
-          item: "ambar",
-        },
-        path: ["color", "marca", "ambar"],
       },
     },
     white: {
@@ -330,12 +347,12 @@ export default {
       },
       700: {
         $type: "color",
-        $value: "#646569",
+        $value: "#63666a",
         filePath: "source/primitivos.json",
         isSource: true,
         original: {
           $type: "color",
-          $value: "#646569",
+          $value: "#63666a",
         },
         name: "ColorNeutral700",
         attributes: {
@@ -347,12 +364,12 @@ export default {
       },
       800: {
         $type: "color",
-        $value: "#505154",
+        $value: "#4f5154",
         filePath: "source/primitivos.json",
         isSource: true,
         original: {
           $type: "color",
-          $value: "#505154",
+          $value: "#4f5154",
         },
         name: "ColorNeutral800",
         attributes: {
@@ -364,12 +381,12 @@ export default {
       },
       900: {
         $type: "color",
-        $value: "#3c3d3f",
+        $value: "#3b3d3f",
         filePath: "source/primitivos.json",
         isSource: true,
         original: {
           $type: "color",
-          $value: "#3c3d3f",
+          $value: "#3b3d3f",
         },
         name: "ColorNeutral900",
         attributes: {
@@ -381,12 +398,12 @@ export default {
       },
       950: {
         $type: "color",
-        $value: "#28292a",
+        $value: "#28292b",
         filePath: "source/primitivos.json",
         isSource: true,
         original: {
           $type: "color",
-          $value: "#28292a",
+          $value: "#28292b",
         },
         name: "ColorNeutral950",
         attributes: {
@@ -1345,12 +1362,12 @@ export default {
     danger: {
       50: {
         $type: "color",
-        $value: "#fff4f3",
+        $value: "#fff4f5",
         filePath: "source/primitivos.json",
         isSource: true,
         original: {
           $type: "color",
-          $value: "#fff4f3",
+          $value: "#fff4f5",
         },
         name: "ColorDanger50",
         attributes: {
@@ -1362,12 +1379,12 @@ export default {
       },
       100: {
         $type: "color",
-        $value: "#ffe2de",
+        $value: "#ffe1e4",
         filePath: "source/primitivos.json",
         isSource: true,
         original: {
           $type: "color",
-          $value: "#ffe2de",
+          $value: "#ffe1e4",
         },
         name: "ColorDanger100",
         attributes: {
@@ -1379,12 +1396,12 @@ export default {
       },
       200: {
         $type: "color",
-        $value: "#ffc6c0",
+        $value: "#ffc4cc",
         filePath: "source/primitivos.json",
         isSource: true,
         original: {
           $type: "color",
-          $value: "#ffc6c0",
+          $value: "#ffc4cc",
         },
         name: "ColorDanger200",
         attributes: {
@@ -1396,12 +1413,12 @@ export default {
       },
       300: {
         $type: "color",
-        $value: "#ffa39b",
+        $value: "#ffa0af",
         filePath: "source/primitivos.json",
         isSource: true,
         original: {
           $type: "color",
-          $value: "#ffa39b",
+          $value: "#ffa0af",
         },
         name: "ColorDanger300",
         attributes: {
@@ -1413,12 +1430,12 @@ export default {
       },
       400: {
         $type: "color",
-        $value: "#ff8179",
+        $value: "#fe7d96",
         filePath: "source/primitivos.json",
         isSource: true,
         original: {
           $type: "color",
-          $value: "#ff8179",
+          $value: "#fe7d96",
         },
         name: "ColorDanger400",
         attributes: {
@@ -1430,12 +1447,12 @@ export default {
       },
       500: {
         $type: "color",
-        $value: "#fe5854",
+        $value: "#f35e7f",
         filePath: "source/primitivos.json",
         isSource: true,
         original: {
           $type: "color",
-          $value: "#fe5854",
+          $value: "#f35e7f",
         },
         name: "ColorDanger500",
         attributes: {
@@ -1447,12 +1464,12 @@ export default {
       },
       600: {
         $type: "color",
-        $value: "#dc3538",
+        $value: "#cb385e",
         filePath: "source/primitivos.json",
         isSource: true,
         original: {
           $type: "color",
-          $value: "#dc3538",
+          $value: "#cb385e",
         },
         name: "ColorDanger600",
         attributes: {
@@ -1464,12 +1481,12 @@ export default {
       },
       700: {
         $type: "color",
-        $value: "#bc001c",
+        $value: "#a40040",
         filePath: "source/primitivos.json",
         isSource: true,
         original: {
           $type: "color",
-          $value: "#bc001c",
+          $value: "#a40040",
         },
         name: "ColorDanger700",
         attributes: {
@@ -1481,12 +1498,12 @@ export default {
       },
       800: {
         $type: "color",
-        $value: "#960e19",
+        $value: "#881237",
         filePath: "source/primitivos.json",
         isSource: true,
         original: {
           $type: "color",
-          $value: "#960e19",
+          $value: "#881237",
         },
         name: "ColorDanger800",
         attributes: {
@@ -1498,12 +1515,12 @@ export default {
       },
       900: {
         $type: "color",
-        $value: "#721115",
+        $value: "#6b172e",
         filePath: "source/primitivos.json",
         isSource: true,
         original: {
           $type: "color",
-          $value: "#721115",
+          $value: "#6b172e",
         },
         name: "ColorDanger900",
         attributes: {
@@ -1515,12 +1532,12 @@ export default {
       },
       950: {
         $type: "color",
-        $value: "#4f0c0d",
+        $value: "#4a101f",
         filePath: "source/primitivos.json",
         isSource: true,
         original: {
           $type: "color",
-          $value: "#4f0c0d",
+          $value: "#4a101f",
         },
         name: "ColorDanger950",
         attributes: {
@@ -3890,7 +3907,7 @@ export default {
     },
     inverse: {
       $type: "color",
-      $value: "#28292a",
+      $value: "#28292b",
       filePath: "source/semanticos.json",
       isSource: true,
       original: {
@@ -3922,7 +3939,7 @@ export default {
     },
     ambar: {
       $type: "color",
-      $value: "#ffa401",
+      $value: "#ffa300",
       filePath: "source/semanticos.json",
       isSource: true,
       original: {
@@ -3940,7 +3957,7 @@ export default {
   text: {
     primary: {
       $type: "color",
-      $value: "#28292a",
+      $value: "#28292b",
       filePath: "source/semanticos.json",
       isSource: true,
       original: {
@@ -3956,7 +3973,7 @@ export default {
     },
     secondary: {
       $type: "color",
-      $value: "#646569",
+      $value: "#63666a",
       filePath: "source/semanticos.json",
       isSource: true,
       original: {
@@ -3972,7 +3989,7 @@ export default {
     },
     tertiary: {
       $type: "color",
-      $value: "#646569",
+      $value: "#63666a",
       filePath: "source/semanticos.json",
       isSource: true,
       original: {
@@ -4298,12 +4315,12 @@ export default {
     },
     "font-display": {
       $type: "string",
-      $value: "Segoe UI",
+      $value: "Kohinoor",
       filePath: "source/semanticos.json",
       isSource: true,
       original: {
         $type: "string",
-        $value: "Segoe UI",
+        $value: "Kohinoor",
       },
       name: "BrandFontDisplay",
       attributes: {
@@ -4314,12 +4331,12 @@ export default {
     },
     "font-body": {
       $type: "string",
-      $value: "Segoe UI",
+      $value: "Open Sans",
       filePath: "source/semanticos.json",
       isSource: true,
       original: {
         $type: "string",
-        $value: "Segoe UI",
+        $value: "Open Sans",
       },
       name: "BrandFontBody",
       attributes: {
@@ -4755,7 +4772,7 @@ export default {
     error: {
       bg: {
         $type: "color",
-        $value: "#fff4f3",
+        $value: "#fff4f5",
         filePath: "source/semanticos.json",
         isSource: true,
         original: {
@@ -4772,7 +4789,7 @@ export default {
       },
       border: {
         $type: "color",
-        $value: "#ffa39b",
+        $value: "#ffa0af",
         filePath: "source/semanticos.json",
         isSource: true,
         original: {
@@ -4789,7 +4806,7 @@ export default {
       },
       text: {
         $type: "color",
-        $value: "#960e19",
+        $value: "#881237",
         filePath: "source/semanticos.json",
         isSource: true,
         original: {
@@ -4806,7 +4823,7 @@ export default {
       },
       icon: {
         $type: "color",
-        $value: "#bc001c",
+        $value: "#a40040",
         filePath: "source/semanticos.json",
         isSource: true,
         original: {
@@ -4859,7 +4876,7 @@ export default {
       },
       text: {
         $type: "color",
-        $value: "#28292a",
+        $value: "#28292b",
         filePath: "source/semanticos.json",
         isSource: true,
         original: {
@@ -4876,7 +4893,7 @@ export default {
       },
       icon: {
         $type: "color",
-        $value: "#646569",
+        $value: "#63666a",
         filePath: "source/semanticos.json",
         isSource: true,
         original: {
@@ -4985,12 +5002,12 @@ export default {
   button: {
     "font-weight": {
       $type: "float",
-      $value: 700,
+      $value: 600,
       filePath: "source/componentes.json",
       isSource: true,
       original: {
         $type: "float",
-        $value: 700,
+        $value: 600,
       },
       name: "ButtonFontWeight",
       attributes: {
@@ -5192,7 +5209,7 @@ export default {
       },
       text: {
         $type: "color",
-        $value: "#28292a",
+        $value: "#28292b",
         filePath: "source/componentes.json",
         isSource: true,
         original: {
@@ -5349,7 +5366,7 @@ export default {
       },
       "bg-hover": {
         $type: "color",
-        $value: "#fff4f3",
+        $value: "#fff4f5",
         filePath: "source/componentes.json",
         isSource: true,
         original: {
@@ -5366,7 +5383,7 @@ export default {
       },
       "bg-press": {
         $type: "color",
-        $value: "#ffe2de",
+        $value: "#ffe1e4",
         filePath: "source/componentes.json",
         isSource: true,
         original: {
@@ -5383,7 +5400,7 @@ export default {
       },
       text: {
         $type: "color",
-        $value: "#bc001c",
+        $value: "#a40040",
         filePath: "source/componentes.json",
         isSource: true,
         original: {
@@ -5400,7 +5417,7 @@ export default {
       },
       border: {
         $type: "color",
-        $value: "#bc001c",
+        $value: "#a40040",
         filePath: "source/componentes.json",
         isSource: true,
         original: {
@@ -5419,7 +5436,7 @@ export default {
     "danger-solid": {
       bg: {
         $type: "color",
-        $value: "#bc001c",
+        $value: "#a40040",
         filePath: "source/componentes.json",
         isSource: true,
         original: {
@@ -5436,7 +5453,7 @@ export default {
       },
       "bg-hover": {
         $type: "color",
-        $value: "#960e19",
+        $value: "#881237",
         filePath: "source/componentes.json",
         isSource: true,
         original: {
@@ -5453,7 +5470,7 @@ export default {
       },
       "bg-press": {
         $type: "color",
-        $value: "#721115",
+        $value: "#6b172e",
         filePath: "source/componentes.json",
         isSource: true,
         original: {
@@ -5487,7 +5504,7 @@ export default {
       },
       border: {
         $type: "color",
-        $value: "#bc001c",
+        $value: "#a40040",
         filePath: "source/componentes.json",
         isSource: true,
         original: {
@@ -5523,7 +5540,7 @@ export default {
       },
       text: {
         $type: "color",
-        $value: "#646569",
+        $value: "#63666a",
         filePath: "source/componentes.json",
         isSource: true,
         original: {
@@ -5740,7 +5757,7 @@ export default {
     },
     "border-hover": {
       $type: "color",
-      $value: "#646569",
+      $value: "#63666a",
       filePath: "source/componentes.json",
       isSource: true,
       original: {
@@ -5772,7 +5789,7 @@ export default {
     },
     "border-error": {
       $type: "color",
-      $value: "#bc001c",
+      $value: "#a40040",
       filePath: "source/componentes.json",
       isSource: true,
       original: {
@@ -5820,7 +5837,7 @@ export default {
     },
     text: {
       $type: "color",
-      $value: "#28292a",
+      $value: "#28292b",
       filePath: "source/componentes.json",
       isSource: true,
       original: {
@@ -5836,7 +5853,7 @@ export default {
     },
     placeholder: {
       $type: "color",
-      $value: "#646569",
+      $value: "#63666a",
       filePath: "source/componentes.json",
       isSource: true,
       original: {
@@ -5852,7 +5869,7 @@ export default {
     },
     label: {
       $type: "color",
-      $value: "#505154",
+      $value: "#4f5154",
       filePath: "source/componentes.json",
       isSource: true,
       original: {
@@ -5966,7 +5983,7 @@ export default {
     },
     text: {
       $type: "color",
-      $value: "#28292a",
+      $value: "#28292b",
       filePath: "source/componentes.json",
       isSource: true,
       original: {
@@ -6066,7 +6083,7 @@ export default {
   portada: {
     bg: {
       $type: "color",
-      $value: "#ffa401",
+      $value: "#ffa300",
       filePath: "source/componentes.json",
       isSource: true,
       original: {
@@ -6149,7 +6166,7 @@ export default {
     inicio: {
       color: {
         $type: "color",
-        $value: "#28292a",
+        $value: "#28292b",
         filePath: "source/componentes.json",
         isSource: true,
         original: {
@@ -6185,7 +6202,7 @@ export default {
     logo: {
       color: {
         $type: "color",
-        $value: "#28292a",
+        $value: "#28292b",
         filePath: "source/componentes.json",
         isSource: true,
         original: {
@@ -6364,7 +6381,7 @@ export default {
       },
       text: {
         $type: "color",
-        $value: "#505154",
+        $value: "#4f5154",
         filePath: "source/componentes.json",
         isSource: true,
         original: {
@@ -6508,7 +6525,7 @@ export default {
     error: {
       bg: {
         $type: "color",
-        $value: "#fff4f3",
+        $value: "#fff4f5",
         filePath: "source/componentes.json",
         isSource: true,
         original: {
@@ -6525,7 +6542,7 @@ export default {
       },
       text: {
         $type: "color",
-        $value: "#960e19",
+        $value: "#881237",
         filePath: "source/componentes.json",
         isSource: true,
         original: {

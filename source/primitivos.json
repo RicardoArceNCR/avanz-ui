@@ -39,19 +39,19 @@
       },
       "700": {
         "$type": "color",
-        "$value": "#646569"
+        "$value": "#63666a"
       },
       "800": {
         "$type": "color",
-        "$value": "#505154"
+        "$value": "#4f5154"
       },
       "900": {
         "$type": "color",
-        "$value": "#3c3d3f"
+        "$value": "#3b3d3f"
       },
       "950": {
         "$type": "color",
-        "$value": "#28292a"
+        "$value": "#28292b"
       }
     },
     "brand": {
@@ -287,47 +287,47 @@
     "danger": {
       "50": {
         "$type": "color",
-        "$value": "#fff4f3"
+        "$value": "#fff4f5"
       },
       "100": {
         "$type": "color",
-        "$value": "#ffe2de"
+        "$value": "#ffe1e4"
       },
       "200": {
         "$type": "color",
-        "$value": "#ffc6c0"
+        "$value": "#ffc4cc"
       },
       "300": {
         "$type": "color",
-        "$value": "#ffa39b"
+        "$value": "#ffa0af"
       },
       "400": {
         "$type": "color",
-        "$value": "#ff8179"
+        "$value": "#fe7d96"
       },
       "500": {
         "$type": "color",
-        "$value": "#fe5854"
+        "$value": "#f35e7f"
       },
       "600": {
         "$type": "color",
-        "$value": "#dc3538"
+        "$value": "#cb385e"
       },
       "700": {
         "$type": "color",
-        "$value": "#bc001c"
+        "$value": "#a40040"
       },
       "800": {
         "$type": "color",
-        "$value": "#960e19"
+        "$value": "#881237"
       },
       "900": {
         "$type": "color",
-        "$value": "#721115"
+        "$value": "#6b172e"
       },
       "950": {
         "$type": "color",
-        "$value": "#4f0c0d"
+        "$value": "#4a101f"
       }
     },
     "success": {

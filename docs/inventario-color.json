@@ -1,5 +1,5 @@
 {
-  "$comentario": "Fuente de verdad del color (etapa 1, runbooks/cliente.md). Sin manual ni Figma: sale de la captura de Ricardo convertida a sRGB, provisional hasta el manual o la confirmación escrita del banco (etapa 4). Decisiones de Ricardo del 2026-11-23, en docs/arranque.md del sitio.",
+  "$comentario": "Fuente de verdad del color (etapa 1, runbooks/cliente.md). Mixta: los cuatro Pantones del manual del cliente (Manual Logo Book, p. 04) y, para lo que el manual recibido no trae (grises medio y claro, colores de servicio), la captura de Ricardo convertida a sRGB, provisional hasta que el banco la confirme (etapa 4). Cambios del 2026-11-24 en docs/decisions/0006-marca-del-manual-del-cliente.md. `fuente` global sigue en \"capturas\" a propósito: mientras los grises medio y claro y los de servicio no estén confirmados por el banco, la puerta de la etapa 4 tiene que seguir avisando. Pasa a \"manual\" cuando el banco entregue o confirme el resto.",
   "fuente": "capturas",
   "captura": {
     "archivo": "vpermedia/avanz/docs/avanz/paleta-srgb.png",
@@ -12,23 +12,39 @@
       "nombre": "naranja",
       "token": "color.marca.naranja",
       "valor": "#FF7500",
-      "fuente": "captura de la paleta, Principales: rótulo y muestra coinciden en sRGB",
+      "fuente": "Manual Logo Book, p. 04 (sha256 ac183696…): Pantone 2018 C, HTML #FF7500",
       "figma": null,
       "decision": "Marca. Superficies, ilustración y marca con texto negro (7,80). Nunca texto blanco (2,69). El rol de acción usa #B85200 de su rampa (etapa 2)."
     },
     {
+      "nombre": "ambar",
+      "token": "color.marca.ambar",
+      "valor": "#FFA300",
+      "fuente": "Manual Logo Book, p. 04 (sha256 ac183696…): Pantone 137 C, HTML #FFA300",
+      "figma": null,
+      "decision": "Superficie de marca con texto negro (10,49). Nunca texto, foco ni botón: blanco 2,00, acción #B85200 encima 2,47, gris secundario 2,88 (pares prohibidos en contrast-pairs.json). No es el único diferenciador junto al naranja (1,35). Sin rampa. Reemplaza #FFA401 del banner (ADR 0006)."
+    },
+    {
+      "nombre": "rojo",
+      "token": "color.marca.rojo",
+      "valor": "#C8102E",
+      "fuente": "Manual Logo Book, p. 04 (sha256 ac183696…): Pantone 186 C, HTML #C8102E (su CMYK dice M:200, errata probable)",
+      "figma": null,
+      "decision": "Solo logo, ilustración y piezas; nunca interfaz. Sin rampa. El error de interfaz es #A40040 (danger/700), a ΔEok 8,6 (ADR 0006)."
+    },
+    {
       "nombre": "gris-oscuro",
       "token": "color.marca.gris-oscuro",
-      "valor": "#646569",
-      "fuente": "captura de la paleta, Principales: rótulo y muestra coinciden en sRGB",
+      "valor": "#63666A",
+      "fuente": "Manual Logo Book, p. 04 (sha256 ac183696…): Pantone Cool Gray 10 C, HTML #63666A",
       "figma": null,
-      "decision": "Texto secundario (blanco 5,82). El texto principal es un gris casi negro de su rampa (etapa 2)."
+      "decision": "Texto secundario (blanco 5,77). Ancla neutral/700; el texto principal es un gris casi negro de su rampa (etapa 2). Reemplaza #646569 de la captura."
     },
     {
       "nombre": "gris-medio",
       "token": "color.marca.gris-medio",
       "valor": "#878C8E",
-      "fuente": "captura de la paleta, Principales: rótulo y muestra coinciden en sRGB",
+      "fuente": "captura de la paleta, Principales: rótulo y muestra coinciden en sRGB. Provisional: el manual recibido (p. 04) no lo trae; se confirma con el banco.",
       "figma": null,
       "decision": "Borde de campos y controles (3,40 sobre blanco). Texto blanco solo grande."
     },
@@ -36,7 +52,7 @@
       "nombre": "gris-claro",
       "token": "color.marca.gris-claro",
       "valor": "#C6C6C6",
-      "fuente": "captura de la paleta, Principales: rótulo y muestra coinciden en sRGB",
+      "fuente": "captura de la paleta, Principales: rótulo y muestra coinciden en sRGB. Provisional: el manual recibido (p. 04) no lo trae; se confirma con el banco.",
       "figma": null,
       "decision": "Solo divisores decorativos y fondos con texto negro. No sirve de borde de control (1,71)."
     },
@@ -44,7 +60,7 @@
       "nombre": "servicio-petroleo",
       "token": "color.marca.servicio-petroleo",
       "valor": "#27727B",
-      "fuente": "captura de la paleta, Secundarios: rótulo y muestra coinciden en sRGB",
+      "fuente": "captura de la paleta, Secundarios: rótulo y muestra coinciden en sRGB. Provisional: el manual recibido (p. 04) no lo trae; se confirma con el banco.",
       "figma": null,
       "decision": "Servicio. Texto blanco (5,56)."
     },
@@ -52,7 +68,7 @@
       "nombre": "servicio-azul",
       "token": "color.marca.servicio-azul",
       "valor": "#005E88",
-      "fuente": "captura de la paleta, Secundarios: rótulo y muestra coinciden en sRGB",
+      "fuente": "captura de la paleta, Secundarios: rótulo y muestra coinciden en sRGB. Provisional: el manual recibido (p. 04) no lo trae; se confirma con el banco.",
       "figma": null,
       "decision": "Servicio. Texto blanco (7,10). Absorbe #295D7E."
     },
@@ -60,7 +76,7 @@
       "nombre": "servicio-azul-retirado",
       "token": "color.marca.servicio-azul-retirado",
       "valor": "#295D7E",
-      "fuente": "captura de la paleta, Secundarios: rótulo y muestra coinciden en sRGB",
+      "fuente": "captura de la paleta, Secundarios: rótulo y muestra coinciden en sRGB. Provisional: el manual recibido (p. 04) no lo trae; se confirma con el banco.",
       "figma": null,
       "decision": "Variante retirada: se unifica con #005E88 (ΔE2000 2,70, no se distinguen). Queda en el inventario, no se usa en interfaz."
     },
@@ -68,7 +84,7 @@
       "nombre": "servicio-naranja-rojizo",
       "token": "color.marca.servicio-naranja-rojizo",
       "valor": "#FA4616",
-      "fuente": "captura de la paleta, Secundarios: rótulo y muestra coinciden en sRGB",
+      "fuente": "captura de la paleta, Secundarios: rótulo y muestra coinciden en sRGB. Provisional: el manual recibido (p. 04) no lo trae; se confirma con el banco.",
       "figma": null,
       "decision": "Servicio. Texto negro encima (5,95); blanco solo grande (3,53)."
     },
@@ -76,43 +92,64 @@
       "nombre": "servicio-rojo",
       "token": "color.marca.servicio-rojo",
       "valor": "#ED0026",
-      "fuente": "captura de la paleta, Secundarios: rótulo y muestra coinciden en sRGB",
+      "fuente": "captura de la paleta, Secundarios: rótulo y muestra coinciden en sRGB. Provisional: el manual recibido (p. 04) no lo trae; se confirma con el banco.",
       "figma": null,
-      "decision": "Servicio, como fondo o ilustración. Nunca en avisos: el error es #BC001C de otra rampa (etapa 2)."
-    },
-    {
-      "nombre": "ambar",
-      "token": "color.marca.ambar",
-      "valor": "#FFA401",
-      "fuente": "banner del sitio del banco (docs/avanz/banner-bg-desktop.jpg, sha256 e16f2cdc…): píxel de fondo, 238 200 de 238 200 muestras en la zona lisa",
-      "figma": null,
-      "decision": "Fondo de la portada del inicio, con capas de #FF7500 al 34 % (decisión de Ricardo, 2026-11-23). Solo superficie, con texto negro (10,56). Nunca botón ni texto: #B85200 sobre ámbar da 2,49 y el gris del logo 2,93. Sin rampa: no es color de interfaz."
+      "decision": "Servicio, como fondo o ilustración. Nunca en avisos: el error es #A40040 de otra rampa (etapa 2)."
     }
   ],
   "tipografia": [
     {
-      "familia": "Segoe UI",
+      "familia": "Kohinoor",
+      "pesos": [
+        500,
+        600,
+        700
+      ],
+      "estilos": [
+        "Medium",
+        "Demi",
+        "Bold",
+        "Demi Italic"
+      ],
+      "uso": "Títulos: Bold en display y portada; Demi en display menores y h1–h3; itálica solo para destacar en títulos.",
+      "fuente": "Archivos del banco (2026-11-24), docs/avanz/cliente-2026-11-24/fuentes/kohinoor del sitio",
+      "licencia": "Indian Type Foundry, comercial. Los archivos traen licencia de escritorio (fsType 4): la licencia web está pendiente y no se publica sin ella (decisión de Ricardo: se ve al final).",
+      "nota": "Demi declara peso 450; en CSS va 600. Sin cifras tabulares: las cifras van en Open Sans. Light solo ≥32 px (no se sirve)."
+    },
+    {
+      "familia": "Open Sans",
       "pesos": [
         400,
+        600,
         700
       ],
       "estilos": [
         "Regular",
-        "Italic",
+        "SemiBold",
         "Bold"
       ],
-      "uso": "Toda la interfaz: títulos, lectura, botones y etiquetas (Bold; no hay Semibold)",
-      "fuente": "Archivos entregados por Ricardo (2026-11-23), recepcion.json → tipografia",
-      "licencia": "Microsoft, comercial: licencia web pendiente (MyFonts/Monotype o Adobe Fonts), se exige en la etapa 4",
-      "provisional": true,
-      "nota": "Reemplaza a Open Sans (decisión de Ricardo). Falta confirmar si es la tipografía de marca del banco; los archivos actuales son un subconjunto latino que se reemplaza por el kit licenciado."
+      "uso": "Lectura (Regular), h4–h5, etiquetas y botones (SemiBold), cifras con tabular-nums.",
+      "fuente": "Archivos del banco (TTF v1.10, Apache 2.0); el sitio sirve los WOFF2 de fontsource (OFL), mismo diseño con GPOS y tnum",
+      "licencia": "Libre (Apache 2.0 / SIL OFL 1.1)"
     }
   ],
-  "conflictos": [
+  "conflictos": [],
+  "manual": {
+    "archivo": "vpermedia/avanz/docs/avanz/cliente-2026-11-24/manual-p04-colores-pantones.pdf",
+    "sha256": "ac183696e0f8f875f31b4a7f5ac3c10ffd0ec8180931a9ec3e90e231177cc646",
+    "pagina": "04 — Colores Pantones (Manual Logo Book)",
+    "verificacion": "Valores HTML del manual. El CMYK del 186 C dice M:200 (errata probable); manda el HTML."
+  },
+  "blanco": {
+    "valor": "#FFFFFF",
+    "fuente": "Manual Logo Book, p. 04 (sha256 ac183696…): White",
+    "token": "color.white"
+  },
+  "conflictos_cerrados": [
     {
       "tema": "logo",
-      "detalle": "El SVG de avanzbanc.com usa #646569, #D7891F, #E1A700 y #B5002C; ninguno es #FF7500. O el logo del sitio es viejo o la paleta es de otra versión de la marca.",
-      "decide": "Ricardo con el banco, antes de la etapa 3"
+      "detalle": "El SVG de avanzbanc.com no usaba #FF7500.",
+      "cierre": "2026-11-24: llegó el logo del banco (mismo dibujo; rellenos #F68628, #FAA41A, #DA1A32 y #474C55 de su conversión CMYK). Es el logo vigente y se usa tal como llegó (ADR 0006)."
     }
   ]
 }

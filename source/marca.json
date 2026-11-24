@@ -5,9 +5,17 @@
         "$type": "color",
         "$value": "#ff7500"
       },
+      "ambar": {
+        "$type": "color",
+        "$value": "#ffa300"
+      },
+      "rojo": {
+        "$type": "color",
+        "$value": "#c8102e"
+      },
       "gris-oscuro": {
         "$type": "color",
-        "$value": "#646569"
+        "$value": "#63666a"
       },
       "gris-medio": {
         "$type": "color",
@@ -36,10 +44,6 @@
       "servicio-rojo": {
         "$type": "color",
         "$value": "#ed0026"
-      },
-      "ambar": {
-        "$type": "color",
-        "$value": "#ffa401"
       }
     }
   }

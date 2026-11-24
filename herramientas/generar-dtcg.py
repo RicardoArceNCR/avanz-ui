@@ -42,8 +42,10 @@ ANCLAS = {
     'azul': {800: M['servicio-azul']},
     'rojizo': {500: M['servicio-naranja-rojizo']},
     'rojo': {600: M['servicio-rojo']},
-    # Error #BC001C: decisión de Ricardo, aparte del rojo de servicio.
-    'danger': {700: '#BC001C'},
+    # Error #A40040 (ADR 0006): carmesí más oscuro que el rojo 186 C del logo
+    # (ΔEok 8,6; antes #BC001C, 3,2) y lejos del rojo de servicio (15,9).
+    # Especialistas de color y accesibilidad, 2026-11-24.
+    'danger': {700: '#A40040'},
     # Propuesta del estudio, no colores de marca: éxito verde y aviso
     # amarillo, lejos del naranja de marca (h 48) y del rojo (h 25).
     'success': {600: gamut_map(0.56, 0.13, 150)},
@@ -56,8 +58,8 @@ for fam, anclas in ANCLAS.items():
 for nombre, hx in M.items():
     if nombre == 'servicio-azul-retirado':
         continue  # se unifica con servicio-azul (decisión de Ricardo)
-    if nombre == 'ambar':
-        continue  # fondo de la portada, sin rampa: no es color de interfaz (ADR 0004)
+    if nombre in ('ambar', 'rojo'):
+        continue  # superficie o logo, sin rampa: no son colores de interfaz (ADR 0004 y 0006)
     assert any(hx in r.values() for r in RAMPAS.values()), f'{nombre} {hx} no está en ninguna rampa'
 
 
@@ -132,7 +134,7 @@ semanticos = {
     'divider': {'default': c('neutral', 300), 'strong': c('neutral', 500)},
     'brand': {'main': c('brand', 500), 'subtle': c('brand', 50), 'strong': c('brand', 700),
               'action': c('brand', 600), 'action-hover': c('brand', 700), 'action-press': c('brand', 800),
-              'font-display': txt('Segoe UI'), 'font-body': txt('Segoe UI')},
+              'font-display': txt('Kohinoor'), 'font-body': txt('Open Sans')},
     'servicio': {'petroleo': servicio('petroleo', 700, W), 'azul': servicio('azul', 800, W),
                  'rojizo': servicio('rojizo', 500, K), 'rojo': servicio('rojo', 600, W)},
     'feedback': {'success': fb('success'), 'warning': fb('warning', 600), 'error': fb('danger'),
@@ -146,7 +148,7 @@ semanticos = {
 # ─── componentes ────────────────────────────────────────────────────────────
 componentes = {
     'button': {
-        'font-weight': num(700),  # Segoe UI no tiene Semibold
+        'font-weight': num(600),  # Open Sans SemiBold (ADR 0006)
         # Radio 12 en botones y campos (ADR 0003: más redondo, pedido de Ricardo).
         'radius': ref('radius.lg', 'number'),
         # Hover: además del color, una sombra (especialistas, 2026-11-23).
@@ -208,8 +210,8 @@ componentes = {
 
 
 # ─── tipografía ─────────────────────────────────────────────────────────────
-# Segoe UI (decisión de Ricardo, 2026-11-23; licencia web en la etapa 4). Sin
-# Semibold: botones y etiquetas en Bold. Escala sobria para banca: display sin
+# Manual del cliente (ADR 0006): Kohinoor en títulos (licencia web pendiente) y
+# Open Sans en lectura, etiquetas y botones (SemiBold). Escala sobria para banca: display sin
 # mayúsculas forzadas; labels en caja normal, sin tracking.
 def estilo(size, lh, ls=None):
     d = {'size': num(size), 'line-height': num(lh)}

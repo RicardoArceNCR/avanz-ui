@@ -13,21 +13,49 @@
           "alpha": 1,
           "hex": "#FF7500"
         },
-        "$description": "Captura de la paleta en sRGB (provisional), Principales."
+        "$description": "Manual Logo Book, p. 04 (Colores Pantones), valor HTML de Pantone 2018 C."
+      },
+      "ambar": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            1.0,
+            0.639216,
+            0.0
+          ],
+          "alpha": 1,
+          "hex": "#FFA300"
+        },
+        "$description": "Manual Logo Book, p. 04 (Colores Pantones), valor HTML de Pantone 137 C."
+      },
+      "rojo": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.784314,
+            0.062745,
+            0.180392
+          ],
+          "alpha": 1,
+          "hex": "#C8102E"
+        },
+        "$description": "Manual Logo Book, p. 04 (Colores Pantones), valor HTML de Pantone 186 C. Solo logo, ilustración y piezas; nunca interfaz."
       },
       "gris-oscuro": {
         "$type": "color",
         "$value": {
           "colorSpace": "srgb",
           "components": [
-            0.392157,
-            0.396078,
-            0.411765
+            0.388235,
+            0.4,
+            0.415686
           ],
           "alpha": 1,
-          "hex": "#646569"
+          "hex": "#63666A"
         },
-        "$description": "Captura de la paleta en sRGB (provisional), Principales."
+        "$description": "Manual Logo Book, p. 04 (Colores Pantones), valor HTML de Pantone Cool Gray 10 C."
       },
       "gris-medio": {
         "$type": "color",
@@ -126,20 +154,6 @@
           "hex": "#ED0026"
         },
         "$description": "Captura de la paleta en sRGB (provisional), Secundarios."
-      },
-      "ambar": {
-        "$type": "color",
-        "$value": {
-          "colorSpace": "srgb",
-          "components": [
-            1.0,
-            0.643137,
-            0.003922
-          ],
-          "alpha": 1,
-          "hex": "#FFA401"
-        },
-        "$description": "Fondo del banner del sitio del banco (docs/avanz/banner-bg-desktop.jpg), provisional. Solo portada."
       }
     }
   }

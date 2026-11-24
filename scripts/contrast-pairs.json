@@ -401,7 +401,19 @@
       "text-on-ambar",
       "surface-ambar",
       4.5,
-      "texto sobre el ámbar de la portada"
+      "texto sobre el ámbar 137 C (superficie)"
+    ],
+    [
+      "brand-action",
+      "surface-ambar",
+      0,
+      "prohibido: acción naranja sobre ámbar (2,47); botón y enlace sobre ámbar van en negro"
+    ],
+    [
+      "text-secondary",
+      "surface-ambar",
+      0,
+      "prohibido: texto secundario sobre ámbar (2,88); sobre ámbar todo el texto es text/on-ambar"
     ]
   ]
 }
