@@ -215,7 +215,9 @@
   --brand-font-display: Segoe UI;
   --brand-font-body: Segoe UI;
   --button-font-weight: 700;
-  --button-primary-shadow-hover: 0px 1px 2px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.10);
+  --button-primary-shadow: 0px 1px 2px rgba(40, 41, 42, 0.12);
+  --button-primary-shadow-hover: 0px 2px 4px -1px rgba(40, 41, 42, 0.14), 0px 6px 12px -4px rgba(40, 41, 42, 0.16);
+  --button-secondary-shadow: 0px 1px 2px rgba(40, 41, 42, 0.08);
   --button-size-sm-height: 32px;
   --button-size-sm-padding-x: 12px;
   --button-size-md-height: 40px;
@@ -225,7 +227,7 @@
   --input-padding-x: 12px;
   --input-padding-y: 10px;
   --card-padding: 24px;
-  --card-shadow: 0px 1px 2px rgba(0, 0, 0, 0.06), 0px 1px 3px rgba(0, 0, 0, 0.10);
+  --card-shadow: 0px 1px 2px rgba(40, 41, 42, 0.06), 0px 3px 10px -3px rgba(40, 41, 42, 0.08);
   --pill-radius: 9999px;
   --pill-sm-padding-x: 8px;
   --pill-md-padding-x: 12px;
@@ -265,9 +267,9 @@
   --breakpoint-lg: 1024;
   --breakpoint-xl: 1280;
   --breakpoint-2xl: 1536;
-  --shadow-sm: 0px 1px 2px rgba(0, 0, 0, 0.06), 0px 1px 3px rgba(0, 0, 0, 0.10);
-  --shadow-md: 0px 4px 6px -1px rgba(0, 0, 0, 0.10), 0px 2px 4px -2px rgba(0, 0, 0, 0.10);
-  --shadow-lg: 0px 10px 15px -3px rgba(0, 0, 0, 0.10), 0px 4px 6px -4px rgba(0, 0, 0, 0.10);
+  --shadow-sm: 0px 1px 2px rgba(40, 41, 42, 0.06), 0px 3px 10px -3px rgba(40, 41, 42, 0.08);
+  --shadow-md: 0px 2px 4px -1px rgba(40, 41, 42, 0.07), 0px 14px 28px -8px rgba(40, 41, 42, 0.14);
+  --shadow-lg: 0px 4px 8px -2px rgba(40, 41, 42, 0.08), 0px 24px 48px -12px rgba(40, 41, 42, 0.20);
   --z-index-dropdown: 1000;
   --z-index-sticky: 1020;
   --z-index-overlay: 1030;
@@ -342,7 +344,7 @@
   --interaction-link-default: var(--color-brand-700);
   --interaction-link-hover: var(--color-brand-800);
   --interaction-link-visited: var(--color-brand-800);
-  --button-radius: var(--radius-md);
+  --button-radius: var(--radius-lg);
   --button-primary-bg: var(--color-brand-600);
   --button-primary-bg-hover: var(--color-brand-700);
   --button-primary-bg-press: var(--color-brand-800);
@@ -384,13 +386,13 @@
   --input-placeholder: var(--color-neutral-700);
   --input-label: var(--color-neutral-800);
   --input-text-disabled: var(--color-neutral-400);
-  --input-radius: var(--radius-md);
+  --input-radius: var(--radius-lg);
   --card-bg: var(--color-white);
   --card-border: var(--color-neutral-200);
   --card-text: var(--color-neutral-950);
   --card-bg-hover: var(--color-neutral-50);
   --card-border-hover: var(--color-neutral-300);
-  --card-radius: var(--radius-lg);
+  --card-radius: var(--radius-xl);
   --pill-base-bg: var(--color-neutral-50);
   --pill-base-text: var(--color-neutral-800);
   --pill-base-border: var(--color-neutral-300);
@@ -594,7 +596,7 @@ footer.end { padding-top: var(--spacing-10); border-top: 1px solid var(--divider
   <p class="over">Sistema · @avanz/ui v0.2.0</p>
   <h1>Avanz</h1>
   <p class="lede">Los tokens de Avanz tal como los publica el paquete. Todo lo que ves en esta página sale de <code>source/dtcg</code>, compilado a <code>tokens.css</code>. Los colores son provisionales: salen de capturas de la paleta y se confirman con el manual o el banco antes de publicar.</p>
-  <div class="facts"><span><b>9</b> rampas de color</span><span><b>398</b> tokens en :root</span><span><b>1</b> tema (claro)</span><span>Fuente: <code>@avanz/ui</code></span></div>
+  <div class="facts"><span><b>9</b> rampas de color</span><span><b>400</b> tokens en :root</span><span><b>1</b> tema (claro)</span><span>Fuente: <code>@avanz/ui</code></span></div>
 </div>
 
 <section id="marca">

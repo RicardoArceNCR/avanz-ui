@@ -4,6 +4,21 @@ Formato: [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/). Versiones:
 [SemVer](https://semver.org/lang/es/). Un cambio de valor de un token publicado
 es minor; renombrar o quitar un token es major.
 
+## [0.3.0] — 2026-11-23
+
+### Cambiado
+
+- `shadow/sm`, `shadow/md` y `shadow/lg`: dos capas (contacto + ambiente),
+  luz cenital, teñidas con `neutral/950` (ADR 0003).
+- `card/shadow` toma el valor de `shadow/sm`.
+- `button/radius` e `input/radius`: `radius/md` (8) → `radius/lg` (12).
+- `card/radius`: `radius/lg` (12) → `radius/xl` (16).
+- `button/primary/shadow-hover`: teñida y más amplia.
+
+### Agregado
+
+- `button/primary/shadow` y `button/secondary/shadow`: sombra corta en reposo.
+
 ## [0.2.0] — 2026-11-23
 
 ### Cambiado
