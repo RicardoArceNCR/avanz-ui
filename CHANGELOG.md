@@ -4,6 +4,30 @@ Formato: [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/). Versiones:
 [SemVer](https://semver.org/lang/es/). Un cambio de valor de un token publicado
 es minor; renombrar o quitar un token es major.
 
+## [0.6.0] — 2026-11-24
+
+Marca del manual del cliente (ADR 0006).
+
+### Agregado
+
+- `color/marca/rojo` `#C8102E` (Pantone 186 C): solo logo, ilustración y
+  piezas; sin rampa, nunca interfaz.
+- Pares prohibidos (mínimo 0) en `contrast-pairs.json`: acción y texto
+  secundario sobre el ámbar.
+
+### Cambiado
+
+- `color/marca/ambar` `#FFA401` → `#FFA300` (137 C); deja de ser solo de la
+  portada.
+- `color/marca/gris-oscuro` `#646569` → `#63666A` (Cool Gray 10 C); la rampa
+  `neutral` se regenera anclada en él.
+- `color/marca/naranja` sin cambio de valor; su fuente pasa al manual (2018 C).
+- `danger/*` se regenera anclada en `#A40040` (antes `#BC001C`): el error se
+  separa del rojo 186 C del logo.
+- `brand/font-display` Segoe UI → Kohinoor; `brand/font-body` Segoe UI → Open
+  Sans (licencia web de Kohinoor pendiente).
+- `button/font-weight` 700 → 600.
+
 ## [0.5.0] — 2026-11-24
 
 ### Agregado

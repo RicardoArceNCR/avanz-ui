@@ -2,7 +2,7 @@
   "button": {
     "font-weight": {
       "$type": "number",
-      "$value": 700
+      "$value": 600
     },
     "radius": {
       "$type": "number",

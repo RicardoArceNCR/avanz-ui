@@ -2,6 +2,8 @@
 
 Estado: propuesta para volver a aprobar las etapas 1 y 2 — 2026-11-23
 
+> Superada en tipografía por la [0006](0006-marca-del-manual-del-cliente.md): Kohinoor y Open Sans del manual; `button/font-weight` vuelve a 600. Los estados de botón siguen vigentes.
+
 ## Contexto
 
 Con el portal armado, Ricardo decidió usar Segoe UI (Regular, Italic y Bold,

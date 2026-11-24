@@ -4,7 +4,9 @@
 
 :root {
   --color-marca-naranja: #ff7500;
-  --color-marca-gris-oscuro: #646569;
+  --color-marca-ambar: #ffa300;
+  --color-marca-rojo: #c8102e;
+  --color-marca-gris-oscuro: #63666a;
   --color-marca-gris-medio: #878c8e;
   --color-marca-gris-claro: #c6c6c6;
   --color-marca-servicio-petroleo: #27727b;
@@ -12,7 +14,6 @@
   --color-marca-servicio-azul-retirado: #295d7e;
   --color-marca-servicio-naranja-rojizo: #fa4616;
   --color-marca-servicio-rojo: #ed0026;
-  --color-marca-ambar: #ffa401;
   --color-white: #ffffff;
   --color-black: #000000;
   --color-neutral-50: #f7f7f6;
@@ -22,10 +23,10 @@
   --color-neutral-400: #a6a9a7;
   --color-neutral-500: #878c8e;
   --color-neutral-600: #74787b;
-  --color-neutral-700: #646569;
-  --color-neutral-800: #505154;
-  --color-neutral-900: #3c3d3f;
-  --color-neutral-950: #28292a;
+  --color-neutral-700: #63666a;
+  --color-neutral-800: #4f5154;
+  --color-neutral-900: #3b3d3f;
+  --color-neutral-950: #28292b;
   --color-brand-50: #fff4ef;
   --color-brand-100: #ffe3d5;
   --color-brand-200: #ffc8ac;
@@ -81,17 +82,17 @@
   --color-rojo-800: #9e0016;
   --color-rojo-900: #78000e;
   --color-rojo-950: #540007;
-  --color-danger-50: #fff4f3;
-  --color-danger-100: #ffe2de;
-  --color-danger-200: #ffc6c0;
-  --color-danger-300: #ffa39b;
-  --color-danger-400: #ff8179;
-  --color-danger-500: #fe5854;
-  --color-danger-600: #dc3538;
-  --color-danger-700: #bc001c;
-  --color-danger-800: #960e19;
-  --color-danger-900: #721115;
-  --color-danger-950: #4f0c0d;
+  --color-danger-50: #fff4f5;
+  --color-danger-100: #ffe1e4;
+  --color-danger-200: #ffc4cc;
+  --color-danger-300: #ffa0af;
+  --color-danger-400: #fe7d96;
+  --color-danger-500: #f35e7f;
+  --color-danger-600: #cb385e;
+  --color-danger-700: #a40040;
+  --color-danger-800: #881237;
+  --color-danger-900: #6b172e;
+  --color-danger-950: #4a101f;
   --color-success-50: #effaf0;
   --color-success-100: #d8f1dc;
   --color-success-200: #b8e3c0;
@@ -212,9 +213,9 @@
   --border-width-md: 1.5px;
   --border-width-lg: 2px;
   --border-width-xl: 3px;
-  --brand-font-display: Segoe UI;
-  --brand-font-body: Segoe UI;
-  --button-font-weight: 700;
+  --brand-font-display: Kohinoor;
+  --brand-font-body: Open Sans;
+  --button-font-weight: 600;
   --button-primary-shadow: 0px 1px 2px rgba(40, 41, 42, 0.12);
   --button-primary-shadow-hover: 0px 2px 4px -1px rgba(40, 41, 42, 0.14), 0px 6px 12px -4px rgba(40, 41, 42, 0.16);
   --button-secondary-shadow: 0px 1px 2px rgba(40, 41, 42, 0.08);

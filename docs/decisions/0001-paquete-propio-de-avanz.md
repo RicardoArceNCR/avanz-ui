@@ -2,6 +2,8 @@
 
 Estado: propuesta para la aprobación de la etapa 2 — 2026-11-23
 
+> Actualizada por la [0006](0006-marca-del-manual-del-cliente.md): el error pasa a `#A40040` y el gris secundario a `#63666A` (Cool Gray 10 C).
+
 ## Contexto
 
 Avanz es un cliente nuevo sin manual ni Figma. La recepción (etapa 0) y la
